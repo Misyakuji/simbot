@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @EnableSimbot
 @SpringBootApplication
-public class StartApplication {
+public class BotApplication {
     public static void main(String[] args) {
         SpringApplication.run(BotApplication.class, args);
     }

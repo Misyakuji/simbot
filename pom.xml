@@ -20,6 +20,11 @@
         <module>simbot-common</module>
     </modules>
 
+    <properties>
+        <spring-boot-starter.version>3.0.2</spring-boot-starter.version>
+        <java.version>17</java.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -32,17 +37,10 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter</artifactId>
+                <version>3.0.2</version>
             </dependency>
-
 
         </dependencies>
     </dependencyManagement>
-
-    <properties>
-        <java.version>17</java.version>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
 
 </project>

@@ -11,18 +11,29 @@
 
     <artifactId>simbot-robot</artifactId>
 
+    <properties>
+        <simbot.version>3.0.0-RC.3</simbot.version>
+        <simbot-component-mirai.version>3.0.0.0-M5</simbot-component-mirai.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
             <version>3.0.2</version>
         </dependency>
+        <!--        simbot-->
+        <dependency>
+            <groupId>love.forte.simbot.boot</groupId>
+            <artifactId>simboot-core-spring-boot-starter</artifactId>
+            <version>${simbot.version}</version>
+        </dependency>
+        <!--        mirai组件-->
+<!--        <dependency>-->
+<!--            <groupId>love.forte.simbot.component</groupId>-->
+<!--            <artifactId>simbot-component-mirai-core</artifactId>-->
+<!--            <version>${simbot-component-mirai.version}</version>-->
+<!--        </dependency>-->
     </dependencies>
-
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
 
 </project>

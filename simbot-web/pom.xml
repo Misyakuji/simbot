@@ -8,14 +8,23 @@
         <artifactId>simbot</artifactId>
         <version>1.0</version>
     </parent>
-
     <artifactId>simbot-web</artifactId>
 
     <dependencies>
         <dependency>
+            <groupId>com.miko</groupId>
+            <artifactId>simbot-common</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
             <version>3.0.2</version>
+        </dependency>
+        <!-- spring-web -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
     </dependencies>
 
