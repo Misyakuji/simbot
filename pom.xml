@@ -31,7 +31,7 @@
         <simbot.version>3.0.0-RC.3</simbot.version>
         <mirai.version>3.0.0.0-beta-M3</mirai.version>
         <simbot.mirai.version>3.0.0.0-M5</simbot.mirai.version>
-        <spring-boot-starter.version>3.0.2</spring-boot-starter.version>
+        <spring-boot-starter.version>${parent.version}</spring-boot-starter.version>
         <java.version>17</java.version>
     </properties>
 

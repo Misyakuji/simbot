@@ -11,16 +11,20 @@
 
     <artifactId>simbot-starter</artifactId>
 
+    <properties>
+        <robot.version>1.0</robot.version>
+        <web.version>1.0</web.version>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>com.miko</groupId>
             <artifactId>simbot-robot</artifactId>
-            <version>${parent.version}</version>
+            <version>${robot.version}</version>
         </dependency>
         <dependency>
             <groupId>com.miko</groupId>
             <artifactId>simbot-web</artifactId>
-            <version>${parent.version}</version>
+            <version>${web.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
