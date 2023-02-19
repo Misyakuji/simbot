@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta name="keywords" content="LightYear,LightYearAdmin,光年,后台模板,后台管理系统,光年HTML模板">
+<meta name="description" content="Light Year Admin V4是一个基于Bootstrap v4.4.1的后台管理系统的HTML模板。">
+<meta name="author" content="yinq">
+<title>日程插件 - 光年(Light Year Admin V4)后台管理系统模板</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+<!--日程插件-->
+<link rel="stylesheet" type="text/css" href="js/fullcalendar/core/main.min.css">
+<link rel="stylesheet" type="text/css" href='js/fullcalendar/daygrid/main.min.css' />
+<link rel="stylesheet" type="text/css" href='js/fullcalendar/timegrid/main.min.css' />
+<link rel="stylesheet" type="text/css" href='js/fullcalendar/list/main.min.css' />
+<!--时间选择插件-->
+<link rel="stylesheet" type="text/css" href="js/bootstrap-datetimepicker/bootstrap-datetimepicker.min.css">
+<!--日期选择插件-->
+<link rel="stylesheet" type="text/css" href="js/bootstrap-datepicker/bootstrap-datepicker3.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+
+<body>
+<!--页面loading-->
+<div id="lyear-preloader" class="loading">
+  <div class="ctn-preloader">
+    <div class="round_spinner">
+      <div class="spinner"></div>
+      <img src="images/loading-logo.png" alt="">
+    </div>
+  </div>
+</div>
+<!--页面loading end-->
+<div class="lyear-layout-web">
+  <div class="lyear-layout-container">
+    <!--左侧导航-->
+    <aside class="lyear-layout-sidebar">
+      
+      <!-- logo -->
+      <div id="logo" class="sidebar-header">
+        <a href="index.html"><img src="images/logo-sidebar.png" title="LightYear" alt="LightYear" /></a>
+      </div>
+      <div class="lyear-layout-sidebar-info lyear-scroll"> 
+        
+        <nav class="sidebar-main">
+          <ul class="nav-drawer">
+            <li class="nav-item"> <a href="index.html"><i class="mdi mdi-home"></i> <span>后台首页</span></a> </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-palette"></i> <span>UI 元素</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_ui_typography.html">排版</a> </li>
+                <li> <a href="lyear_ui_grid.html">栅格</a> </li>
+                <li> <a href="lyear_ui_icon.html">图标</a> </li>
+                <li> <a href="lyear_ui_alerts.html">警告框</a> </li>
+                <li> <a href="lyear_ui_buttons.html">按钮</a> </li>
+                <li> <a href="lyear_ui_button_group.html">按钮组</a> </li>
+                <li> <a href="lyear_ui_cards.html">卡片</a> </li>
+                <li> <a href="lyear_ui_tables.html">表格</a> </li>
+                <li> <a href="lyear_ui_modal.html">模态框</a> </li>
+                <li> <a href="lyear_ui_dropdown.html">下拉菜单</a> </li>
+                <li> <a href="lyear_ui_tooltips.html">工具提示</a> </li>
+                <li> <a href="lyear_ui_tabs.html">标签页</a> </li>
+                <li> <a href="lyear_ui_pagination.html">分页</a> </li>
+                <li> <a href="lyear_ui_popovers.html">POP提示</a> </li>
+                <li> <a href="lyear_ui_images.html">图片</a> </li>
+                <li> <a href="lyear_ui_badges.html">徽章</a> </li>
+                <li> <a href="lyear_ui_progress.html">进度条</a> </li>
+                <li> <a href="lyear_ui_list_group.html">列表组</a> </li>
+                <li> <a href="lyear_ui_media_object.html">媒体对象</a> </li>
+                <li> <a href="lyear_ui_navbar.html">导航栏</a> </li>
+                <li> <a href="lyear_ui_scrollspy.html">滚动监听</a> </li>
+                <li> <a href="lyear_ui_spinners.html">加载状态</a> </li>
+                <li> <a href="lyear_ui_toasts.html">消息弹窗</a> </li>
+                <li> <a href="lyear_ui_timeline.html">时光轴</a> </li>
+                <li> <a href="lyear_ui_other.html">其他</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-format-align-justify"></i> <span>表单</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_forms_elements.html">基本元素</a> </li>
+                <li> <a href="lyear_forms_input_group.html">输入框组</a> </li>
+                <li> <a href="lyear_forms_radio.html">单选框</a> </li>
+                <li> <a href="lyear_forms_checkbox.html">复选框</a> </li>
+                <li> <a href="lyear_forms_switches.html">开关</a> </li>
+                <li> <a href="lyear_forms_range.html">范围选择</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-tools"></i> <span>工具类</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_utilities_borders.html">边框</a> </li>
+                <li> <a href="lyear_utilities_colors.html">颜色</a> </li>
+                <li> <a href="lyear_utilities_display.html">显示属性</a> </li>
+                <li> <a href="lyear_utilities_flex.html">弹性布局</a> </li>
+                <li> <a href="lyear_utilities_float.html">浮动</a> </li>
+                <li> <a href="lyear_utilities_sizing.html">尺寸</a> </li>
+                <li> <a href="lyear_utilities_spacing.html">间隔</a> </li>
+                <li> <a href="lyear_utilities_stretched_link.html">延伸链接</a> </li>
+                <li> <a href="lyear_utilities_text.html">文本</a> </li>
+                <li> <a href="lyear_utilities_other.html">其他</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-file-outline"></i> <span>示例页面</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_pages_doc.html">文档列表</a> </li>
+                <li> <a href="lyear_pages_gallery.html">图库列表</a> </li>
+                <li> <a href="lyear_pages_config.html">网站配置</a> </li>
+                <li> <a href="lyear_pages_rabc.html">设置权限</a> </li>
+                <li> <a href="lyear_pages_add_doc.html">新增文档</a> </li>
+                <li> <a href="lyear_pages_guide.html">表单向导</a> </li>
+                <li> <a href="lyear_pages_data_table.html">表格插件</a> </li>
+                <li> <a href="lyear_pages_login_1.html" target="_blank">登录页面1</a> </li>
+                <li> <a href="lyear_pages_login_2.html" target="_blank">登录页面2</a> </li>
+                <li> <a href="lyear_pages_login_3.html" target="_blank">登录页面3</a> </li>
+                <li> <a href="lyear_pages_login_4.html" target="_blank">登录页面4</a> </li>
+                <li> <a href="lyear_pages_error.html" target="_blank">错误页面</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav active open">
+              <a href="javascript:void(0)"><i class="mdi mdi-language-javascript"></i> <span>JS 插件</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_js_datepicker.html">日期选取器</a> </li>
+                <li> <a href="lyear_js_colorpicker.html">选色器</a> </li>
+                <li> <a href="lyear_js_chartjs.html">Chart.js</a> </li>
+                <li> <a href="lyear_js_jconfirm.html">对话框</a> </li>
+                <li> <a href="lyear_js_tags_input.html">标签插件</a> </li>
+                <li> <a href="lyear_js_notify.html">通知消息</a> </li>
+                <li> <a href="lyear_js_maxlength.html">长度判断</a> </li>
+                <li> <a href="lyear_js_select.html">下拉选择</a> </li>
+                <li class="active"> <a href="lyear_js_fullcalendar.html">日程插件</a> </li>
+                <li> <a href="lyear_js_loading.html">loading插件</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-menu"></i> <span>多级菜单</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="#!">一级菜单</a> </li>
+                <li class="nav-item nav-item-has-subnav"> 
+                  <a href="#!">一级菜单</a>
+                  <ul class="nav nav-subnav">
+                    <li> <a href="#!">二级菜单</a> </li>
+                    <li class="nav-item nav-item-has-subnav"> 
+                      <a href="#!">二级菜单</a>
+                      <ul class="nav nav-subnav">
+                        <li> <a href="#!">三级菜单</a> </li>
+                        <li> <a href="#!">三级菜单</a> </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li> <a href="#!">一级菜单</a> </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        
+        <div class="sidebar-footer">
+          <p class="copyright">Copyright &copy; 2019. <a target="_blank" href="http://lyear.itshubao.com">IT书包</a> All rights reserved.</p>
+        </div>
+      </div>
+      
+    </aside>
+    <!--End 左侧导航-->
+    
+    <!--头部信息-->
+    <header class="lyear-layout-header">
+      
+      <nav class="navbar">
+      
+        <div class="navbar-left">
+          <div class="lyear-aside-toggler">
+            <span class="lyear-toggler-bar"></span>
+            <span class="lyear-toggler-bar"></span>
+            <span class="lyear-toggler-bar"></span>
+          </div>
+        </div>
+        
+        <ul class="navbar-right d-flex align-items-center">
+          <li class="dropdown dropdown-notice">
+            <span data-toggle="dropdown" class="icon-item">
+              <i class="mdi mdi-bell-outline"></i>
+              <span class="badge badge-danger">10</span>
+            </span>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="lyear-notifications">
+                
+                <div class="lyear-notifications-title clearfix"  data-stopPropagation="true"><a href="#!" class="float-right">查看全部</a>你有 10 条未读消息</div>
+                <div class="lyear-notifications-info lyear-scroll">
+                  <a href="#!" class="dropdown-item" title="树莓派销量猛增，疫情期间居家工作学习、医疗领域都需要它">树莓派销量猛增，疫情期间居家工作学习、医疗领域都需要它</a>
+                  <a href="#!" class="dropdown-item" title="GNOME 用户体验团队将为 GNOME Shell 提供更多改进">GNOME 用户体验团队将为 GNOME Shell 提供更多改进</a>
+                  <a href="#!" class="dropdown-item" title="Linux On iPhone 即将面世，支持 iOS 的双启动">Linux On iPhone 即将面世，支持 iOS 的双启动</a>
+                  <a href="#!" class="dropdown-item" title="GitHub 私有仓库完全免费面向团队提供">GitHub 私有仓库完全免费面向团队提供</a>
+                  <a href="#!" class="dropdown-item" title="Wasmtime 为 WebAssembly 增加 Go 语言绑定">Wasmtime 为 WebAssembly 增加 Go 语言绑定</a>
+                  <a href="#!" class="dropdown-item" title="红帽借“订阅”成开源一哥，首创者 Cormier 升任总裁">红帽借“订阅”成开源一哥，首创者 Cormier 升任总裁</a>
+                  <a href="#!" class="dropdown-item" title="Zend 宣布推出两项 PHP 新产品">Zend 宣布推出两项 PHP 新产品</a>
+                </div>
+                
+              </div>
+            </div>
+          </li>
+          <!--切换主题配色-->
+		  <li class="dropdown dropdown-skin">
+		    <span data-toggle="dropdown" class="icon-item"><i class="mdi mdi-palette"></i></span>
+			<ul class="dropdown-menu dropdown-menu-right" data-stopPropagation="true">
+              <li class="drop-title"><p>主题</p></li>
+              <li class="drop-skin-li clearfix">
+                <span class="inverse">
+                  <input type="radio" name="site_theme" value="default" id="site_theme_1" checked>
+                  <label for="site_theme_1"></label>
+                </span>
+                <span>
+                  <input type="radio" name="site_theme" value="dark" id="site_theme_2">
+                  <label for="site_theme_2"></label>
+                </span>
+                <span>
+                  <input type="radio" name="site_theme" value="translucent" id="site_theme_3">
+                  <label for="site_theme_3"></label>
+                </span>
+              </li>
+			  <li class="drop-title"><p>LOGO</p></li>
+			  <li class="drop-skin-li clearfix">
+                <span class="inverse">
+                  <input type="radio" name="logo_bg" value="default" id="logo_bg_1" checked>
+                  <label for="logo_bg_1"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_2" id="logo_bg_2">
+                  <label for="logo_bg_2"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_3" id="logo_bg_3">
+                  <label for="logo_bg_3"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_4" id="logo_bg_4">
+                  <label for="logo_bg_4"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_5" id="logo_bg_5">
+                  <label for="logo_bg_5"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_6" id="logo_bg_6">
+                  <label for="logo_bg_6"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_7" id="logo_bg_7">
+                  <label for="logo_bg_7"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_8" id="logo_bg_8">
+                  <label for="logo_bg_8"></label>
+                </span>
+			  </li>
+			  <li class="drop-title"><p>头部</p></li>
+			  <li class="drop-skin-li clearfix">
+                <span class="inverse">
+                  <input type="radio" name="header_bg" value="default" id="header_bg_1" checked>
+                  <label for="header_bg_1"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_2" id="header_bg_2">
+                  <label for="header_bg_2"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_3" id="header_bg_3">
+                  <label for="header_bg_3"></label>
+                </span>
+                <span>
+                  <input type="radio" name="header_bg" value="color_4" id="header_bg_4">
+                  <label for="header_bg_4"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_5" id="header_bg_5">
+                  <label for="header_bg_5"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_6" id="header_bg_6">
+                  <label for="header_bg_6"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_7" id="header_bg_7">
+                  <label for="header_bg_7"></label>
+                </span>
+                <span>
+                  <input type="radio" name="header_bg" value="color_8" id="header_bg_8">
+                  <label for="header_bg_8"></label>
+                </span>
+				</li>
+			  <li class="drop-title"><p>侧边栏</p></li>
+			  <li class="drop-skin-li clearfix">
+                <span class="inverse">
+                  <input type="radio" name="sidebar_bg" value="default" id="sidebar_bg_1" checked>
+                  <label for="sidebar_bg_1"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_2" id="sidebar_bg_2">
+                  <label for="sidebar_bg_2"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_3" id="sidebar_bg_3">
+                  <label for="sidebar_bg_3"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_4" id="sidebar_bg_4">
+                  <label for="sidebar_bg_4"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_5" id="sidebar_bg_5">
+                  <label for="sidebar_bg_5"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_6" id="sidebar_bg_6">
+                  <label for="sidebar_bg_6"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_7" id="sidebar_bg_7">
+                  <label for="sidebar_bg_7"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_8" id="sidebar_bg_8">
+                  <label for="sidebar_bg_8"></label>
+                </span>
+			  </li>
+		    </ul>
+		  </li>
+          <!--切换主题配色-->
+          <li class="dropdown dropdown-profile">
+            <a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle">
+              <img class="img-avatar img-avatar-48 m-r-10" src="images/users/avatar.jpg" alt="笔下光年" />
+              <span>笔下光年</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li>
+                <a class="dropdown-item" href="lyear_pages_profile.html"><i class="mdi mdi-account"></i> 个人信息</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="lyear_pages_edit_pwd.html"><i class="mdi mdi-lock-outline"></i> 修改密码</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)"><i class="mdi mdi-delete"></i> 清空缓存</a>
+              </li>
+              <li class="dropdown-divider"></li>
+              <li>
+                <a class="dropdown-item" href="lyear_pages_login_1.html"><i class="mdi mdi-logout-variant"></i> 退出登录</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+      </nav>
+      
+    </header>
+    <!--End 头部信息-->
+    
+    <!--页面主要内容-->
+    <main class="lyear-layout-content">
+      
+      <div class="container-fluid p-t-15">
+        
+        <div class="row">
+          
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-body">
+       
+                <div id="calendar" data-provide="fullcalendar"></div>
+                
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+          
+    </main>
+    <!--End 页面主要内容-->
+  </div>
+</div>
+<!-- 编辑日程 -->
+<div class="modal fade" id="modal-event" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form action="#!" method="post" onsubmit="return false;" id="event_form">
+      <div class="modal-header">
+        <h6 class="modal-title">编辑一个日程</h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="form-group">
+          <label>标题</label>
+          <input type="text" class="form-control" name="title" id="title" placeholder="日程标题">
+        </div>
+
+        <div class="form-group">
+          <label>开始日期和时间</label>
+          <div class="input-group">
+            <input class="form-control" data-provide="datepicker" data-today-highlight="true" data-date-format="yyyy-mm-dd" type="text" placeholder="日期" data-autoclose="true" name="start_day" id="start_day">
+            <div class="input-group-prepend input-group-append">
+              <span class="input-group-text" id="basic-addon1">~</span>
+            </div>
+            <input class="form-control" data-provide="datetimepicker" data-side-by-side="true" data-format="HH:mm" type="text" placeholder="具体时间" name="start_time" id="start_time">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>结束日期和时间</label>
+          <div class="input-group">
+            <input class="form-control" data-provide="datepicker" data-today-highlight="true" data-date-format="yyyy-mm-dd" type="text" placeholder="结束日期,如果全天则不设置结束日期" data-autoclose="true" name="end_day" id="end_day">
+            <div class="input-group-prepend input-group-append">
+              <span class="input-group-text" id="basic-addon1">~</span>
+            </div>
+            <input class="form-control" data-provide="datetimepicker" data-side-by-side="true" data-format="HH:mm" type="text" placeholder="具体时间" name="end_time" id="end_time">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>备注</label>
+          <textarea class="form-control" rows="3" name="remark" id="remark" placeholder="简要说明"></textarea>
+        </div>
+
+        <div class="text-center">
+          <div class="drop-skin-li clearfix">
+            <span>
+              <input type="radio" name="event_bg" value="bg-primary" checked id="event_primary">
+              <label for="event_primary" class="bg-primary"></label>
+            </span>
+            <span>
+              <input type="radio" name="event_bg" value="bg-success" id="event_success">
+              <label for="event_success" class="bg-success"></label>
+            </span>
+            <span>
+              <input type="radio" name="event_bg" value="bg-info" id="event_info">
+              <label for="event_info" class="bg-info"></label>
+            </span>
+            <span>
+              <input type="radio" name="event_bg" value="bg-warning" id="event_warning">
+              <label for="event_warning" class="bg-warning"></label>
+            </span>
+            <span>
+              <input type="radio" name="event_bg" value="bg-danger" id="event_danger">
+              <label for="event_danger" class="bg-danger"></label>
+            </span>
+            <span>
+              <input type="radio" name="event_bg" value="bg-pink" id="event_pink">
+              <label for="event_pink" class="bg-pink"></label>
+            </span>
+            <span>
+              <input type="radio" name="event_bg" value="bg-purple" id="event_purple">
+              <label for="event_purple" class="bg-purple"></label>
+            </span>
+            <span>
+              <input type="radio" name="event_bg" value="bg-brown" id="event_brown">
+              <label for="event_brown" class="bg-brown"></label>
+            </span>
+            <span>
+              <input type="radio" name="event_bg" value="bg-cyan" id="event_cyan">
+              <label for="event_cyan" class="bg-cyan"></label>
+            </span>
+            <span>
+              <input type="radio" name="event_bg" value="bg-yellow" id="event_yellow">
+              <label for="event_yellow" class="bg-yellow"></label>
+            </span>
+            <span>
+              <input type="radio" name="event_bg" value="bg-gray" id="event_gray">
+              <label for="event_gray" class="bg-gray"></label>
+            </span>
+            <span>
+              <input type="radio" name="event_bg" value="bg-dark" id="event_dark">
+              <label for="event_dark" class="bg-dark"></label>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <input type="hidden" name="event_id" id="event_id" value="0" />
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary" onclick="saveEvent();">保存</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- end 编辑日程 -->
+<!-- 展示日程 -->
+<div class="modal fade" id="modal-view-event" tabindex="-1">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title">日程内容</h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="m-b-10">
+          <label>时间</label>
+          <div class="event-time"></div>
+        </div>
+
+        <div class="m-b-10">
+          <label>备注</label>
+          <div class="event-remark"></div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-id="0" id="open-modal-edit">去编辑</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end 展示日程 -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/perfect-scrollbar.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.min.js"></script>
+<!--日期选择器-->
+<script type="text/javascript" src="js/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js"></script>
+<!--时间日期选择器-->
+<script type="text/javascript" src="js/momentjs/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="js/momentjs/locale/zh-cn.min.js"></script>
+<script type="text/javascript" src="js/main.min.js"></script>
+<!--日程插件-->
+<script type="text/javascript" src="js/fullcalendar/core/main.min.js"></script>
+<script type="text/javascript" src="js/fullcalendar/core/locales/zh-cn.js"></script>
+<script type="text/javascript" src="js/fullcalendar/interaction/main.min.js"></script>
+<script type="text/javascript" src="js/fullcalendar/daygrid/main.min.js"></script>
+<script type="text/javascript" src="js/fullcalendar/timegrid/main.min.js"></script>
+<script type="text/javascript" src="js/fullcalendar/list/main.min.js"></script>
+<script type="text/javascript" src="js/fullcalendar/rrule/main.min.js"></script>
+<script type="text/javascript" src="js/main.min.js"></script>
+<script type="text/javascript">
+var calendarEl = document.getElementById('calendar');
+
+// 定义时间点（避免时间变化导致示例不显示）
+var thisDate     = new Date();
+var thisFullYear = thisDate.getFullYear();
+var thisMonth    = thisDate .getMonth() + 1;
+if (thisMonth < 10) thisMonth = '0' + thisMonth;
+
+var testDate1 = thisFullYear + '-' + thisMonth + '-01';
+var testDate2 = thisFullYear + '-' + thisMonth + '-07';
+var testDate3 = thisFullYear + '-' + thisMonth + '-10';
+var testDate4 = thisFullYear + '-' + thisMonth + '-09T16:00:00';
+var testDate5 = thisFullYear + '-' + thisMonth + '-16T16:00:00';
+var testDate6 = thisFullYear + '-' + thisMonth + '-11';
+var testDate7 = thisFullYear + '-' + thisMonth + '-13';
+var testDate8 = thisFullYear + '-' + thisMonth + '-12T10:30:00';
+var testDate9 = thisFullYear + '-' + thisMonth + '-12T12:30:00';
+var testDate10 = thisFullYear + '-' + thisMonth + '-12T12:00:00';
+var testDate11 = thisFullYear + '-' + thisMonth + '-12T14:30:00';
+var testDate12 = thisFullYear + '-' + thisMonth + '-12T17:30:00';
+var testDate13 = thisFullYear + '-' + thisMonth + '-12T20:00:00';
+var testDate14 = thisFullYear + '-' + thisMonth + '-12T19:00:00';
+var testDate15 = thisFullYear + '-' + thisMonth + '-28';
+
+var calendar = new FullCalendar.Calendar(calendarEl, {
+    plugins: [ 'interaction', 'dayGrid', 'timeGrid', 'list', 'rrule' ],
+    //height: 'parent',
+    header: {
+        left: 'today prev,next day',
+        center: 'title',
+        right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+    },
+    buttonText: {
+        today:    '今天',
+        month:    '月',
+        week:     '周',
+        day:      '天',
+        list:     '列表'
+    },
+    defaultView: 'dayGridMonth',
+    //navLinks: true, // 可以单击日/周名称导航视图。
+    //selectable: true, // 允许用户通过单击和拖动突出显示多天或多个时间段。
+    editable: true, // 确定是否可以修改日历上的事件。
+    eventLimit: true, // 当事件太多时允许“更多”链接
+    events: [
+    {
+      id: 1,
+      title: '公司召开年会',
+      start: testDate1,
+    },
+    {
+      id: 2,
+      title: '话剧全国巡演第二场',
+      start: testDate2,
+      end: testDate3
+    },
+    {
+      id: 3,
+      title: '工作报告',
+      start: testDate4
+    },
+    {
+      id: 4,
+      title: '工作报告',
+      start: testDate5
+    },
+    {
+      id: 5,
+      title: '研讨会',
+      start: testDate6,
+      end: testDate7
+    },
+    {
+      id: 6,
+      title: '会议',
+      start: testDate8,
+      end: testDate9,
+      className: 'bg-danger'
+    },
+    {
+      id: 7,
+      title: '午餐',
+      start: testDate10
+    },
+    {
+      id: 8,
+      title: '会议',
+      start: testDate11,
+      className: 'bg-danger'
+    },
+    {
+      id: 9,
+      title: '休息一会',
+      start: testDate12,
+    },
+    {
+      id: 10,
+      title: '晚餐',
+      start: testDate13
+    },
+    {
+      id: 11,
+      title: '生日宴会',
+      start: testDate14,
+      remark: '一定要记得参加',
+      className: 'bg-purple'
+    },
+    {
+      id: 12,
+      title: '打开百度',
+      url: 'https://www.baidu.com/',
+      start: testDate15
+    }],
+    dateClick: function(date, jsEvent, view) {
+        $('#modal-event').modal('show');
+    },
+    eventClick: function(date, jsEvent, view) {
+        $('#modal-view-event').find('.modal-title').text(date.event.title);
+        var time_str = formatDate(date.event.start, 'yyyy-MM-dd HH:mm:ss');
+        if (date.event.hasOwnProperty('end')) {
+            time_str += ' - ' + formatDate(date.event.end, 'yyyy-MM-dd HH:mm:ss'); // 根据自己的需求格式化时间显示
+        }
+        $('#modal-view-event').find('.event-time').text(time_str);
+        if (date.event.extendedProps.hasOwnProperty('remark')) {
+            $('#modal-view-event').find('.event-remark').text(date.event.extendedProps.remark);
+        }
+        $('#open-modal-edit').attr('data-id', date.event.id);
+        $('#modal-view-event').modal('show');
+    }
+});
+
+calendar.render();
+calendar.setOption('locale', 'zh');
+
+// 编辑日程
+function saveEvent() {
+    var title        = $('#title').val(),
+        start_day    = $('#start_day').val(),
+        start_time   = $('#start_time').val(),
+        end_day      = $('#end_day').val(),
+        end_time     = $('#end_time').val(),
+        remark       = $('#remark').val(), // 按个人需求，可记录到数据库
+        event_bg     = $("input[name='event_bg']:checked").val(),
+        event_id     = $('#event_id').val(),
+        event_params = {};
+    
+    if (title.length == 0) {
+        alert('标题不能为空');  // 自行修改消息插件提示
+        return false;
+    } else {
+        event_params.title = title;
+    }
+    if (start_day.length == 0 ) {
+        alert('开始时间不能为空');
+        return false;
+    }
+    var start_str  = start_day;
+    if (start_time.length > 0) {
+        start_str  = start_day + 'T' + start_time + ':00';// 示例中只到分，如需设置秒，则自行更改，input配置HH:mm:ss
+    }
+    var start_date = new Date(start_str);
+    if (!isNaN(start_date.valueOf())) {
+        event_params.start = start_str;
+    } else {
+        alert('开始日期格式错误');
+        return false;
+    }
+    if (end_day.length > 0) {
+        var end_str = end_day;
+        if (end_time.length > 0) {
+            end_str = end_day + 'T' + end_time + ':00'; // 示例中只到分，如需设置秒，则自行更改，input配置HH:mm:ss
+        }
+        var end_date = new Date(end_str);
+        if (!isNaN(end_date.valueOf())) {
+            event_params.end = end_str;
+        } else {
+            alert('结束日期格式错误');
+            return false;
+        }
+    }
+    if (event_bg.length > 0) {
+        event_params.className = event_bg;
+    }
+    if ($.trim(remark).length > 0) {
+        event_params.remark = remark;
+    }
+    
+    if (event_id > 0) {
+        // 提交修改
+        var eventObj = calendar.getEventById(event_id);
+        eventObj.setProp('title', event_params.title);
+        eventObj.setProp('classNames', event_params.className);
+        eventObj.setStart(event_params.start);
+        if (event_params.hasOwnProperty('end')) {
+            eventObj.setStart(event_params.end);
+        }
+        if (event_params.hasOwnProperty('remark')) {
+            eventObj.setExtendedProp('remark', event_params.remark);
+        }
+    } else {
+        // 提交新增
+        calendar.addEvent(event_params);
+    }
+    $('#event_form')[0].reset(); // 重置表单
+    $('#event_id').val('0'); // 重置为零
+    $('#modal-event').modal('hide');
+}
+
+// 打开编辑窗口
+$('#open-modal-edit').click(function(){
+    var event_id = $(this).attr('data-id'),
+        eventObj = calendar.getEventById(event_id);
+    
+    $("#modal-event").find('#title').val(eventObj.title);
+    var start_day  = formatDate(eventObj.start, 'yyyy-MM-dd'),
+        start_time = formatDate(eventObj.start, 'HH:mm');
+
+    $("#start_day").val(start_day);
+    $("#start_time").val(start_time);
+    if (eventObj.extendedProps.hasOwnProperty('remark')) {
+        $("#remark").val(eventObj.extendedProps.remark);
+    }
+    $("input:radio[value='" + eventObj.classNames[0] + "']").prop('checked','true');
+    $('#event_id').val(event_id); // 重置为零
+    $('#modal-view-event').modal('hide');
+    $('#modal-event').modal('show');
+});
+
+// 点击关闭按钮的处理
+$('.close').click(function(){
+    if ($(this).parents('.modal').has('#event_form')) {
+        $('#event_form')[0].reset(); // 重置表单
+        $('#event_id').val('0'); // 重置为零
+    }
+});
+
+// 点击取消的处理
+$('[data-dismiss]').click(function(){
+    if ($(this).parents('.modal').has('#event_form')) {
+        $('#event_form')[0].reset(); // 重置表单
+        $('#event_id').val('0'); // 重置为零
+    }
+});
+
+// 时间格式化
+function formatDate(date = new Date(), fmt = 'yyyy-MM-dd HH:mm:ss') {
+    date = (typeof date === 'number' || typeof date === 'string') ? new Date(date) : date;
+
+    var o = {
+        'M+': date.getMonth() + 1, // 月份
+        'd+': date.getDate(), // 日
+        'h+': date.getHours() % 12 === 0 ? 12 : date.getHours() % 12, // 小时
+        'H+': date.getHours(), // 小时
+        'm+': date.getMinutes(), // 分
+        's+': date.getSeconds(), // 秒
+        'q+': Math.floor((date.getMonth() + 3) / 3), // 季度
+        'S': date.getMilliseconds() // 毫秒
+    };
+    var week = {
+        '0': '\u65e5',
+        '1': '\u4e00',
+        '2': '\u4e8c',
+        '3': '\u4e09',
+        '4': '\u56db',
+        '5': '\u4e94',
+        '6': '\u516d'
+    };
+
+    if (/(y+)/.test(fmt)) {
+        fmt = fmt.replace(RegExp.$1, (date.getFullYear() + '').substr(4 - RegExp.$1.length));
+    }
+
+    if (/(E+)/.test(fmt)) {
+        fmt = fmt.replace(RegExp.$1, ((RegExp.$1.length > 1) ? (RegExp.$1.length > 2 ? '\u661f\u671f' : '\u5468') : '') + week[date.getDay() + '']);
+    }
+
+    for (var k in o) {
+        if (new RegExp('(' + k + ')').test(fmt)) {
+            fmt = fmt.replace(RegExp.$1, (RegExp.$1.length === 1) ? (o[k]) : (('00' + o[k]).substr(('' + o[k]).length)));
+        }
+    }
+
+    return fmt;
+}
+</script>
+</body>
+</html>

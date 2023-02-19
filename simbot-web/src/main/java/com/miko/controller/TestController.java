@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/test")
-@PropertySource(value = {"classpath:webInfo.properties"})
+//@PropertySource(value = {"classpath:webInfo.properties"})
 public class TestController {
 
 

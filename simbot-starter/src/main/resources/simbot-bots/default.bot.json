@@ -1,9 +1,9 @@
 {
   "component": "simbot.mirai",
-  "code": you QQ,
+  "code": bot的qq,
   "passwordInfo": {
     "type": "md5_text",
-    "md5": "you password md5"
+    "md5": "bot的MD5密码"
   },
   "config": {
     "workingDir": ".",

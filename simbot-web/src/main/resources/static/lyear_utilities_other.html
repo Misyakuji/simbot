@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta name="keywords" content="LightYear,LightYearAdmin,光年,后台模板,后台管理系统,光年HTML模板">
+<meta name="description" content="Light Year Admin V4是一个基于Bootstrap v4.4.1的后台管理系统的HTML模板。">
+<meta name="author" content="yinq">
+<title>其他通用类 - 光年(Light Year Admin V4)后台管理系统模板</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+
+<body>
+<!--页面loading-->
+<div id="lyear-preloader" class="loading">
+  <div class="ctn-preloader">
+    <div class="round_spinner">
+      <div class="spinner"></div>
+      <img src="images/loading-logo.png" alt="">
+    </div>
+  </div>
+</div>
+<!--页面loading end-->
+<div class="lyear-layout-web">
+  <div class="lyear-layout-container">
+    <!--左侧导航-->
+    <aside class="lyear-layout-sidebar">
+      
+      <!-- logo -->
+      <div id="logo" class="sidebar-header">
+        <a href="index.html"><img src="images/logo-sidebar.png" title="LightYear" alt="LightYear" /></a>
+      </div>
+      <div class="lyear-layout-sidebar-info lyear-scroll"> 
+        
+        <nav class="sidebar-main">
+          <ul class="nav-drawer">
+            <li class="nav-item"> <a href="index.html"><i class="mdi mdi-home"></i> <span>后台首页</span></a> </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-palette"></i> <span>UI 元素</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_ui_typography.html">排版</a> </li>
+                <li> <a href="lyear_ui_grid.html">栅格</a> </li>
+                <li> <a href="lyear_ui_icon.html">图标</a> </li>
+                <li> <a href="lyear_ui_alerts.html">警告框</a> </li>
+                <li> <a href="lyear_ui_buttons.html">按钮</a> </li>
+                <li> <a href="lyear_ui_button_group.html">按钮组</a> </li>
+                <li> <a href="lyear_ui_cards.html">卡片</a> </li>
+                <li> <a href="lyear_ui_tables.html">表格</a> </li>
+                <li> <a href="lyear_ui_modal.html">模态框</a> </li>
+                <li> <a href="lyear_ui_dropdown.html">下拉菜单</a> </li>
+                <li> <a href="lyear_ui_tooltips.html">工具提示</a> </li>
+                <li> <a href="lyear_ui_tabs.html">标签页</a> </li>
+                <li> <a href="lyear_ui_pagination.html">分页</a> </li>
+                <li> <a href="lyear_ui_popovers.html">POP提示</a> </li>
+                <li> <a href="lyear_ui_images.html">图片</a> </li>
+                <li> <a href="lyear_ui_badges.html">徽章</a> </li>
+                <li> <a href="lyear_ui_progress.html">进度条</a> </li>
+                <li> <a href="lyear_ui_list_group.html">列表组</a> </li>
+                <li> <a href="lyear_ui_media_object.html">媒体对象</a> </li>
+                <li> <a href="lyear_ui_navbar.html">导航栏</a> </li>
+                <li> <a href="lyear_ui_scrollspy.html">滚动监听</a> </li>
+                <li> <a href="lyear_ui_spinners.html">加载状态</a> </li>
+                <li> <a href="lyear_ui_toasts.html">消息弹窗</a> </li>
+                <li> <a href="lyear_ui_timeline.html">时光轴</a> </li>
+                <li> <a href="lyear_ui_other.html">其他</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-format-align-justify"></i> <span>表单</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_forms_elements.html">基本元素</a> </li>
+                <li> <a href="lyear_forms_input_group.html">输入框组</a> </li>
+                <li> <a href="lyear_forms_radio.html">单选框</a> </li>
+                <li> <a href="lyear_forms_checkbox.html">复选框</a> </li>
+                <li> <a href="lyear_forms_switches.html">开关</a> </li>
+                <li> <a href="lyear_forms_range.html">范围选择</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav active open">
+              <a href="javascript:void(0)"><i class="mdi mdi-tools"></i> <span>工具类</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_utilities_borders.html">边框</a> </li>
+                <li> <a href="lyear_utilities_colors.html">颜色</a> </li>
+                <li> <a href="lyear_utilities_display.html">显示属性</a> </li>
+                <li> <a href="lyear_utilities_flex.html">弹性布局</a> </li>
+                <li> <a href="lyear_utilities_float.html">浮动</a> </li>
+                <li> <a href="lyear_utilities_sizing.html">尺寸</a> </li>
+                <li> <a href="lyear_utilities_spacing.html">间隔</a> </li>
+                <li> <a href="lyear_utilities_stretched_link.html">延伸链接</a> </li>
+                <li> <a href="lyear_utilities_text.html">文本</a> </li>
+                <li class="active"> <a href="lyear_utilities_other.html">其他</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-file-outline"></i> <span>示例页面</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_pages_doc.html">文档列表</a> </li>
+                <li> <a href="lyear_pages_gallery.html">图库列表</a> </li>
+                <li> <a href="lyear_pages_config.html">网站配置</a> </li>
+                <li> <a href="lyear_pages_rabc.html">设置权限</a> </li>
+                <li> <a href="lyear_pages_add_doc.html">新增文档</a> </li>
+                <li> <a href="lyear_pages_guide.html">表单向导</a> </li>
+                <li> <a href="lyear_pages_data_table.html">表格插件</a> </li>
+                <li> <a href="lyear_pages_login_1.html" target="_blank">登录页面1</a> </li>
+                <li> <a href="lyear_pages_login_2.html" target="_blank">登录页面2</a> </li>
+                <li> <a href="lyear_pages_login_3.html" target="_blank">登录页面3</a> </li>
+                <li> <a href="lyear_pages_login_4.html" target="_blank">登录页面4</a> </li>
+                <li> <a href="lyear_pages_error.html" target="_blank">错误页面</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-language-javascript"></i> <span>JS 插件</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_js_datepicker.html">日期选取器</a> </li>
+                <li> <a href="lyear_js_colorpicker.html">选色器</a> </li>
+                <li> <a href="lyear_js_chartjs.html">Chart.js</a> </li>
+                <li> <a href="lyear_js_jconfirm.html">对话框</a> </li>
+                <li> <a href="lyear_js_tags_input.html">标签插件</a> </li>
+                <li> <a href="lyear_js_notify.html">通知消息</a> </li>
+                <li> <a href="lyear_js_maxlength.html">长度判断</a> </li>
+                <li> <a href="lyear_js_select.html">下拉选择</a> </li>
+                <li> <a href="lyear_js_fullcalendar.html">日程插件</a> </li>
+                <li> <a href="lyear_js_loading.html">loading插件</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-menu"></i> <span>多级菜单</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="#!">一级菜单</a> </li>
+                <li class="nav-item nav-item-has-subnav"> 
+                  <a href="#!">一级菜单</a>
+                  <ul class="nav nav-subnav">
+                    <li> <a href="#!">二级菜单</a> </li>
+                    <li class="nav-item nav-item-has-subnav"> 
+                      <a href="#!">二级菜单</a>
+                      <ul class="nav nav-subnav">
+                        <li> <a href="#!">三级菜单</a> </li>
+                        <li> <a href="#!">三级菜单</a> </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li> <a href="#!">一级菜单</a> </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        
+        <div class="sidebar-footer">
+          <p class="copyright">Copyright &copy; 2019. <a target="_blank" href="http://lyear.itshubao.com">IT书包</a> All rights reserved.</p>
+        </div>
+      </div>
+      
+    </aside>
+    <!--End 左侧导航-->
+    
+    <!--头部信息-->
+    <header class="lyear-layout-header">
+      
+      <nav class="navbar">
+      
+        <div class="navbar-left">
+          <div class="lyear-aside-toggler">
+            <span class="lyear-toggler-bar"></span>
+            <span class="lyear-toggler-bar"></span>
+            <span class="lyear-toggler-bar"></span>
+          </div>
+        </div>
+        
+        <ul class="navbar-right d-flex align-items-center">
+          <li class="dropdown dropdown-notice">
+            <span data-toggle="dropdown" class="icon-item">
+              <i class="mdi mdi-bell-outline"></i>
+              <span class="badge badge-danger">10</span>
+            </span>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="lyear-notifications">
+                
+                <div class="lyear-notifications-title clearfix"  data-stopPropagation="true"><a href="#!" class="float-right">查看全部</a>你有 10 条未读消息</div>
+                <div class="lyear-notifications-info lyear-scroll">
+                  <a href="#!" class="dropdown-item" title="树莓派销量猛增，疫情期间居家工作学习、医疗领域都需要它">树莓派销量猛增，疫情期间居家工作学习、医疗领域都需要它</a>
+                  <a href="#!" class="dropdown-item" title="GNOME 用户体验团队将为 GNOME Shell 提供更多改进">GNOME 用户体验团队将为 GNOME Shell 提供更多改进</a>
+                  <a href="#!" class="dropdown-item" title="Linux On iPhone 即将面世，支持 iOS 的双启动">Linux On iPhone 即将面世，支持 iOS 的双启动</a>
+                  <a href="#!" class="dropdown-item" title="GitHub 私有仓库完全免费面向团队提供">GitHub 私有仓库完全免费面向团队提供</a>
+                  <a href="#!" class="dropdown-item" title="Wasmtime 为 WebAssembly 增加 Go 语言绑定">Wasmtime 为 WebAssembly 增加 Go 语言绑定</a>
+                  <a href="#!" class="dropdown-item" title="红帽借“订阅”成开源一哥，首创者 Cormier 升任总裁">红帽借“订阅”成开源一哥，首创者 Cormier 升任总裁</a>
+                  <a href="#!" class="dropdown-item" title="Zend 宣布推出两项 PHP 新产品">Zend 宣布推出两项 PHP 新产品</a>
+                </div>
+                
+              </div>
+            </div>
+          </li>
+          <!--切换主题配色-->
+		  <li class="dropdown dropdown-skin">
+		    <span data-toggle="dropdown" class="icon-item"><i class="mdi mdi-palette"></i></span>
+			<ul class="dropdown-menu dropdown-menu-right" data-stopPropagation="true">
+              <li class="drop-title"><p>主题</p></li>
+              <li class="drop-skin-li clearfix">
+                <span class="inverse">
+                  <input type="radio" name="site_theme" value="default" id="site_theme_1" checked>
+                  <label for="site_theme_1"></label>
+                </span>
+                <span>
+                  <input type="radio" name="site_theme" value="dark" id="site_theme_2">
+                  <label for="site_theme_2"></label>
+                </span>
+                <span>
+                  <input type="radio" name="site_theme" value="translucent" id="site_theme_3">
+                  <label for="site_theme_3"></label>
+                </span>
+              </li>
+			  <li class="drop-title"><p>LOGO</p></li>
+			  <li class="drop-skin-li clearfix">
+                <span class="inverse">
+                  <input type="radio" name="logo_bg" value="default" id="logo_bg_1" checked>
+                  <label for="logo_bg_1"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_2" id="logo_bg_2">
+                  <label for="logo_bg_2"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_3" id="logo_bg_3">
+                  <label for="logo_bg_3"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_4" id="logo_bg_4">
+                  <label for="logo_bg_4"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_5" id="logo_bg_5">
+                  <label for="logo_bg_5"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_6" id="logo_bg_6">
+                  <label for="logo_bg_6"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_7" id="logo_bg_7">
+                  <label for="logo_bg_7"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_8" id="logo_bg_8">
+                  <label for="logo_bg_8"></label>
+                </span>
+			  </li>
+			  <li class="drop-title"><p>头部</p></li>
+			  <li class="drop-skin-li clearfix">
+                <span class="inverse">
+                  <input type="radio" name="header_bg" value="default" id="header_bg_1" checked>
+                  <label for="header_bg_1"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_2" id="header_bg_2">
+                  <label for="header_bg_2"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_3" id="header_bg_3">
+                  <label for="header_bg_3"></label>
+                </span>
+                <span>
+                  <input type="radio" name="header_bg" value="color_4" id="header_bg_4">
+                  <label for="header_bg_4"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_5" id="header_bg_5">
+                  <label for="header_bg_5"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_6" id="header_bg_6">
+                  <label for="header_bg_6"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_7" id="header_bg_7">
+                  <label for="header_bg_7"></label>
+                </span>
+                <span>
+                  <input type="radio" name="header_bg" value="color_8" id="header_bg_8">
+                  <label for="header_bg_8"></label>
+                </span>
+				</li>
+			  <li class="drop-title"><p>侧边栏</p></li>
+			  <li class="drop-skin-li clearfix">
+                <span class="inverse">
+                  <input type="radio" name="sidebar_bg" value="default" id="sidebar_bg_1" checked>
+                  <label for="sidebar_bg_1"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_2" id="sidebar_bg_2">
+                  <label for="sidebar_bg_2"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_3" id="sidebar_bg_3">
+                  <label for="sidebar_bg_3"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_4" id="sidebar_bg_4">
+                  <label for="sidebar_bg_4"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_5" id="sidebar_bg_5">
+                  <label for="sidebar_bg_5"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_6" id="sidebar_bg_6">
+                  <label for="sidebar_bg_6"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_7" id="sidebar_bg_7">
+                  <label for="sidebar_bg_7"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_8" id="sidebar_bg_8">
+                  <label for="sidebar_bg_8"></label>
+                </span>
+			  </li>
+		    </ul>
+		  </li>
+          <!--切换主题配色-->
+          <li class="dropdown dropdown-profile">
+            <a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle">
+              <img class="img-avatar img-avatar-48 m-r-10" src="images/users/avatar.jpg" alt="笔下光年" />
+              <span>笔下光年</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li>
+                <a class="dropdown-item" href="lyear_pages_profile.html"><i class="mdi mdi-account"></i> 个人信息</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="lyear_pages_edit_pwd.html"><i class="mdi mdi-lock-outline"></i> 修改密码</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)"><i class="mdi mdi-delete"></i> 清空缓存</a>
+              </li>
+              <li class="dropdown-divider"></li>
+              <li>
+                <a class="dropdown-item" href="lyear_pages_login_1.html"><i class="mdi mdi-logout-variant"></i> 退出登录</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+      </nav>
+      
+    </header>
+    <!--End 头部信息-->
+    
+    <!--页面主要内容-->
+    <main class="lyear-layout-content">
+      
+      <div class="container-fluid p-t-15">
+        
+        <div class="row">
+          
+          <div class="col-lg-12">
+            <div class="card">
+              <header class="card-header"><div class="card-title">清楚浮动</div></header>
+              <div class="card-body">
+                
+                <p>通过向父元素添加 <code>.clearfix</code>，可以轻松清除浮动。</p>
+                <pre>&lt;div class="clearfix"&gt;...&lt;/div&gt;</pre>
+                <pre>// Mixin itself
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+// Usage as a mixin
+.element {
+  @include clearfix;
+}</pre>
+                <p>下面的示例演示如何使用 <code>.clearfix</code>。如果没有 <code>.clearfix</code>，div将不会跨越按钮，这将导致布局损坏。</p>
+                <div class="border-example">
+                  <div class="bg-info clearfix">
+                    <button type="button" class="btn btn-secondary float-left">示例按钮向左浮动</button>
+                    <button type="button" class="btn btn-secondary float-right">示例按钮向右浮动</button>
+                  </div>
+                </div>
+                <pre>&lt;div class="bg-info clearfix"&gt;
+  &lt;button type="button" class="btn btn-secondary float-left"&gt;示例按钮向左浮动&lt;/button&gt;
+  &lt;button type="button" class="btn btn-secondary float-right"&gt;示例按钮向右浮动&lt;/button&gt;
+&lt;/div&gt;</pre>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-12">
+            <div class="card">
+              <header class="card-header"><div class="card-title">关闭图标</div></header>
+              <div class="card-body">
+                
+                <p>可使用 <code>aria-label</code> 标签，为屏幕阅读器用户添加文字定义（为阅读障碍者提供访问支持）。</p>
+                <div class="border-example">
+                  <button type="button" class="close" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <pre>&lt;button type="button" class="close" aria-label="Close"&gt;
+  &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
+&lt;/button&gt;</pre>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-12">
+            <div class="card">
+              <header class="card-header"><div class="card-title">嵌入</div></header>
+              <div class="card-body">
+                
+                <p>将这些规则应用到 <code>&lt;iframe&gt;</code>、<code>&lt;embed&gt;</code>、 <code>&lt;video&gt;</code>、 <code>&lt;object&gt;</code> 上，当需要配合其它属性（如响应式）时，也可以加入 <code>.embed-responsive-item</code> 定义。</p>
+                <div class="callout callout-info">你不需要将 <code>frameborder="0"</code> 加入到你的 <code>&lt;iframe&gt;</code> 中，因为我们已经为您覆盖处理了这个属性。</div>
+                <p class="mt-3">你可以将任何代码嵌入到 <code>&lt;iframe&gt;</code> 中，并使用 <code>.embed-responsive</code> 实现同比例收缩，至于 <code>.embed-responsive-item</code> 不是严格要求的-虽然我们鼓励使用它。</p>
+                <pre>&lt;div class="embed-responsive embed-responsive-16by9"&gt;
+  &lt;iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;</pre>
+                <h6>长宽比例处理</h6>
+                <pre>&lt;!-- 21:9 aspect ratio --&gt;
+&lt;div class="embed-responsive embed-responsive-21by9"&gt;
+  &lt;iframe class="embed-responsive-item" src="..."&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;!-- 16:9 aspect ratio --&gt;
+&lt;div class="embed-responsive embed-responsive-16by9"&gt;
+  &lt;iframe class="embed-responsive-item" src="..."&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;!-- 4:3 aspect ratio --&gt;
+&lt;div class="embed-responsive embed-responsive-4by3"&gt;
+  &lt;iframe class="embed-responsive-item" src="..."&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;!-- 1:1 aspect ratio --&gt;
+&lt;div class="embed-responsive embed-responsive-1by1"&gt;
+  &lt;iframe class="embed-responsive-item" src="..."&gt;&lt;/iframe&gt;
+&lt;/div&gt;</pre>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-12">
+            <div class="card">
+              <header class="card-header"><div class="card-title">溢出</div></header>
+              <div class="card-body">
+                
+                <p>默认情况下，为两个值提供了溢出功能，但它们没有响应式的。</p>
+                <div class="border-example d-md-flex">
+                  <div class="overflow-auto p-3 mb-3 mb-md-0 mr-md-3 bg-light" style="max-width: 260px; max-height: 100px;">
+                    这是对具有设置宽度和高度维度的元素使用 <code>.overflow-auto</code> 的示例。按设计，此内容将垂直滚动。
+                  </div>
+                  <div class="overflow-hidden p-3 bg-light" style="max-width: 260px; max-height: 100px;">
+                    这是在具有设置宽度和高度维度的元素上使用 <code>.overflow-hidden</code> 的示例。
+                  </div>
+                </div>
+                <pre>&lt;div class="overflow-auto"&gt;...&lt;/div&gt;
+&lt;div class="overflow-hidden"&gt;...&lt;/div&gt;</pre>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-12">
+            <div class="card">
+              <header class="card-header"><div class="card-title">定位</div></header>
+              <div class="card-body">
+                
+                <p>使用 <code>.position-*</code> 样式，可以实现快速定位-虽然它们不包含响应式支持。</p>
+                <pre>&lt;div class="position-static"&gt;...&lt;/div&gt;
+&lt;div class="position-relative"&gt;...&lt;/div&gt;
+&lt;div class="position-absolute"&gt;...&lt;/div&gt;
+&lt;div class="position-fixed"&gt;...&lt;/div&gt;
+&lt;div class="position-sticky"&gt;...&lt;/div&gt;</pre>
+                <p>固定在top顶部</p>
+                <pre>&lt;div class="fixed-top"&gt;...&lt;/div&gt;</pre>
+                <p>固定在bottom底部</p>
+                <pre>&lt;div class="fixed-bottom"&gt;...&lt;/div&gt;</pre>
+                <p>贴齐于top顶部</p>
+                <pre>&lt;div class="sticky-top"&gt;...&lt;/div&gt;</pre>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-12">
+            <div class="card">
+              <header class="card-header"><div class="card-title">读屏器</div></header>
+              <div class="card-body">
+                
+                <p>使用屏幕阅读器通用样式定义，隐藏屏幕阅读器不支持的设备元素。</p>
+                <pre>&lt;a class="sr-only sr-only-focusable" href="#content"&gt;跳到主要内容&lt;/a&gt;</pre>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-12">
+            <div class="card">
+              <header class="card-header"><div class="card-title">图像替换</div></header>
+              <div class="card-body">
+                
+                <p>使用 <code>.text-hide</code> 样式可以保持标签的亲和性及SEO优化需求，引入后，需要使用 <code>background-image</code> 属性来提供视觉展示，而不是文字内容（文字内容随即隐藏）。</p>
+                <div class="border-example">
+                  <h1 class="text-hide" style="background-image: url('images/logo-ico.png'); width: 68px; height: 68px;">光年后台模板</h1>
+                </div>
+                <pre>&lt;h1 class="text-hide" style="background-image: url('images/logo-ico.png'); width: 68px; height: 68px;"&gt;光年后台模板&lt;/h1&gt;</pre>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-12">
+            <div class="card">
+              <header class="card-header"><div class="card-title">阴影</div></header>
+              <div class="card-body">
+                
+                <div class="border-example">
+                  <div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</div>
+                  <div class="shadow-sm p-3 mb-5 rounded">Small shadow</div>
+                  <div class="shadow p-3 mb-5 rounded">Regular shadow</div>
+                  <div class="shadow-lg p-3 mb-5 rounded">Larger shadow</div>
+                </div>
+                <pre>&lt;div class="shadow-none p-3 mb-5 bg-light rounded"&gt;No shadow&lt;/div&gt;
+&lt;div class="shadow-sm p-3 mb-5 bg-white rounded"&gt;Small shadow&lt;/div&gt;
+&lt;div class="shadow p-3 mb-5 bg-white rounded"&gt;Regular shadow&lt;/div&gt;
+&lt;div class="shadow-lg p-3 mb-5 bg-white rounded"&gt;Larger shadow&lt;/div&gt;</pre>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-12">
+            <div class="card">
+              <header class="card-header"><div class="card-title">垂直对齐</div></header>
+              <div class="card-body">
+                
+                <p>使用 <code>vertical-alignment</code> 通用样式改变元素的对齐，注意：垂直对齐仅影响 内联inline、 内联块inline-block、 内联表inline-table、 表格单元格table cell元素。</p>
+                <p>可选属性有 <code>.align-baseline</code>、 <code>.align-top</code>、 <code>.align-middle</code>、<code>.align-bottom</code>、 <code>.align-text-bottom</code>、 <code>.align-text-top</code> 。</p>
+                <div class="border-example">
+                  <span class="align-baseline">baseline基准</span>
+                  <span class="align-top">top顶部</span>
+                  <span class="align-middle">middle垂直居中</span>
+                  <span class="align-bottom">bottom底部</span>
+                  <span class="align-text-top">text-top文本顶部</span>
+                  <span class="align-text-bottom">text-bottom文本底部</span>
+                </div>
+                <pre>&lt;span class="align-baseline"&gt;baseline基准&lt;/span&gt;
+&lt;span class="align-top"&gt;top顶部&lt;/span&gt;
+&lt;span class="align-middle"&gt;middle垂直居中&lt;/span&gt;
+&lt;span class="align-bottom"&gt;bottom底部&lt;/span&gt;
+&lt;span class="align-text-top"&gt;text-top文本顶部&lt;/span&gt;
+&lt;span class="align-text-bottom"&gt;text-bottom文本底部&lt;/span&gt;</pre>
+                <p>在表格单元格中：</p>
+                <div class="border-example">
+                  <table style="height: 100px;">
+                    <tbody>
+                      <tr>
+                        <td class="align-baseline">baseline</td>
+                        <td class="align-top">top</td>
+                        <td class="align-middle">middle</td>
+                        <td class="align-bottom">bottom</td>
+                        <td class="align-text-top">text-top</td>
+                        <td class="align-text-bottom">text-bottom</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <pre>&lt;table style="height: 100px;"&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td class="align-baseline"&gt;baseline&lt;/td&gt;
+      &lt;td class="align-top"&gt;top&lt;/td&gt;
+      &lt;td class="align-middle"&gt;middle&lt;/td&gt;
+      &lt;td class="align-bottom"&gt;bottom&lt;/td&gt;
+      &lt;td class="align-text-top"&gt;text-top&lt;/td&gt;
+      &lt;td class="align-text-bottom"&gt;text-bottom&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</pre>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-12">
+            <div class="card">
+              <header class="card-header"><div class="card-title">显示或隐藏</div></header>
+              <div class="card-body">
+                
+                <p>使用通用样式的 <code>visibility</code> 设置元素的可见性，这不会改变元素的 display 值，也不会影响布局，<code>.invisible</code> 元素仍占用页面空间，内容将隐藏但仍然保留在屏幕阅读器中。</p>
+                <p>根据需要选用 <code>.visible</code> 或 <code>.invisible</code> 两个样式类。</p>
+                <pre>&lt;div class="visible"&gt;...&lt;/div&gt;
+&lt;div class="invisible"&gt;...&lt;/div&gt;</pre>
+                
+              </div>
+            </div>
+          </div>
+              
+        </div>
+        
+      </div>
+    
+    </main>
+    <!--End 页面主要内容-->
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/perfect-scrollbar.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="js/main.min.js"></script>
+</body>
+</html>

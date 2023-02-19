@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta name="keywords" content="LightYear,LightYearAdmin,光年,后台模板,后台管理系统,光年HTML模板">
+<meta name="description" content="Light Year Admin V4是一个基于Bootstrap v4.4.1的后台管理系统的HTML模板。">
+<meta name="author" content="yinq">
+<title>其他 - 光年(Light Year Admin V4)后台管理系统模板</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+
+<body>
+<!--页面loading-->
+<div id="lyear-preloader" class="loading">
+  <div class="ctn-preloader">
+    <div class="round_spinner">
+      <div class="spinner"></div>
+      <img src="images/loading-logo.png" alt="">
+    </div>
+  </div>
+</div>
+<!--页面loading end-->
+<div class="lyear-layout-web">
+  <div class="lyear-layout-container">
+    <!--左侧导航-->
+    <aside class="lyear-layout-sidebar">
+      
+      <!-- logo -->
+      <div id="logo" class="sidebar-header">
+        <a href="index.html"><img src="images/logo-sidebar.png" title="LightYear" alt="LightYear" /></a>
+      </div>
+      <div class="lyear-layout-sidebar-info lyear-scroll"> 
+        
+        <nav class="sidebar-main">
+          <ul class="nav-drawer">
+            <li class="nav-item"> <a href="index.html"><i class="mdi mdi-home"></i> <span>后台首页</span></a> </li>
+            <li class="nav-item nav-item-has-subnav active open">
+              <a href="javascript:void(0)"><i class="mdi mdi-palette"></i> <span>UI 元素</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_ui_typography.html">排版</a> </li>
+                <li> <a href="lyear_ui_grid.html">栅格</a> </li>
+                <li> <a href="lyear_ui_icon.html">图标</a> </li>
+                <li> <a href="lyear_ui_alerts.html">警告框</a> </li>
+                <li> <a href="lyear_ui_buttons.html">按钮</a> </li>
+                <li> <a href="lyear_ui_button_group.html">按钮组</a> </li>
+                <li> <a href="lyear_ui_cards.html">卡片</a> </li>
+                <li> <a href="lyear_ui_tables.html">表格</a> </li>
+                <li> <a href="lyear_ui_modal.html">模态框</a> </li>
+                <li> <a href="lyear_ui_dropdown.html">下拉菜单</a> </li>
+                <li> <a href="lyear_ui_tooltips.html">工具提示</a> </li>
+                <li> <a href="lyear_ui_tabs.html">标签页</a> </li>
+                <li> <a href="lyear_ui_pagination.html">分页</a> </li>
+                <li> <a href="lyear_ui_popovers.html">POP提示</a> </li>
+                <li> <a href="lyear_ui_images.html">图片</a> </li>
+                <li> <a href="lyear_ui_badges.html">徽章</a> </li>
+                <li> <a href="lyear_ui_progress.html">进度条</a> </li>
+                <li> <a href="lyear_ui_list_group.html">列表组</a> </li>
+                <li> <a href="lyear_ui_media_object.html">媒体对象</a> </li>
+                <li> <a href="lyear_ui_navbar.html">导航栏</a> </li>
+                <li> <a href="lyear_ui_scrollspy.html">滚动监听</a> </li>
+                <li> <a href="lyear_ui_spinners.html">加载状态</a> </li>
+                <li> <a href="lyear_ui_toasts.html">消息弹窗</a> </li>
+                <li> <a href="lyear_ui_timeline.html">时光轴</a> </li>
+                <li class="active"> <a href="lyear_ui_other.html">其他</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-format-align-justify"></i> <span>表单</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_forms_elements.html">基本元素</a> </li>
+                <li> <a href="lyear_forms_input_group.html">输入框组</a> </li>
+                <li> <a href="lyear_forms_radio.html">单选框</a> </li>
+                <li> <a href="lyear_forms_checkbox.html">复选框</a> </li>
+                <li> <a href="lyear_forms_switches.html">开关</a> </li>
+                <li> <a href="lyear_forms_range.html">范围选择</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-tools"></i> <span>工具类</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_utilities_borders.html">边框</a> </li>
+                <li> <a href="lyear_utilities_colors.html">颜色</a> </li>
+                <li> <a href="lyear_utilities_display.html">显示属性</a> </li>
+                <li> <a href="lyear_utilities_flex.html">弹性布局</a> </li>
+                <li> <a href="lyear_utilities_float.html">浮动</a> </li>
+                <li> <a href="lyear_utilities_sizing.html">尺寸</a> </li>
+                <li> <a href="lyear_utilities_spacing.html">间隔</a> </li>
+                <li> <a href="lyear_utilities_stretched_link.html">延伸链接</a> </li>
+                <li> <a href="lyear_utilities_text.html">文本</a> </li>
+                <li> <a href="lyear_utilities_other.html">其他</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-file-outline"></i> <span>示例页面</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_pages_doc.html">文档列表</a> </li>
+                <li> <a href="lyear_pages_gallery.html">图库列表</a> </li>
+                <li> <a href="lyear_pages_config.html">网站配置</a> </li>
+                <li> <a href="lyear_pages_rabc.html">设置权限</a> </li>
+                <li> <a href="lyear_pages_add_doc.html">新增文档</a> </li>
+                <li> <a href="lyear_pages_guide.html">表单向导</a> </li>
+                <li> <a href="lyear_pages_data_table.html">表格插件</a> </li>
+                <li> <a href="lyear_pages_login_1.html" target="_blank">登录页面1</a> </li>
+                <li> <a href="lyear_pages_login_2.html" target="_blank">登录页面2</a> </li>
+                <li> <a href="lyear_pages_login_3.html" target="_blank">登录页面3</a> </li>
+                <li> <a href="lyear_pages_login_4.html" target="_blank">登录页面4</a> </li>
+                <li> <a href="lyear_pages_error.html" target="_blank">错误页面</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-language-javascript"></i> <span>JS 插件</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_js_datepicker.html">日期选取器</a> </li>
+                <li> <a href="lyear_js_colorpicker.html">选色器</a> </li>
+                <li> <a href="lyear_js_chartjs.html">Chart.js</a> </li>
+                <li> <a href="lyear_js_jconfirm.html">对话框</a> </li>
+                <li> <a href="lyear_js_tags_input.html">标签插件</a> </li>
+                <li> <a href="lyear_js_notify.html">通知消息</a> </li>
+                <li> <a href="lyear_js_maxlength.html">长度判断</a> </li>
+                <li> <a href="lyear_js_select.html">下拉选择</a> </li>
+                <li> <a href="lyear_js_fullcalendar.html">日程插件</a> </li>
+                <li> <a href="lyear_js_loading.html">loading插件</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-menu"></i> <span>多级菜单</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="#!">一级菜单</a> </li>
+                <li class="nav-item nav-item-has-subnav"> 
+                  <a href="#!">一级菜单</a>
+                  <ul class="nav nav-subnav">
+                    <li> <a href="#!">二级菜单</a> </li>
+                    <li class="nav-item nav-item-has-subnav"> 
+                      <a href="#!">二级菜单</a>
+                      <ul class="nav nav-subnav">
+                        <li> <a href="#!">三级菜单</a> </li>
+                        <li> <a href="#!">三级菜单</a> </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li> <a href="#!">一级菜单</a> </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        
+        <div class="sidebar-footer">
+          <p class="copyright">Copyright &copy; 2019. <a target="_blank" href="http://lyear.itshubao.com">IT书包</a> All rights reserved.</p>
+        </div>
+      </div>
+      
+    </aside>
+    <!--End 左侧导航-->
+    
+    <!--头部信息-->
+    <header class="lyear-layout-header">
+      
+      <nav class="navbar">
+      
+        <div class="navbar-left">
+          <div class="lyear-aside-toggler">
+            <span class="lyear-toggler-bar"></span>
+            <span class="lyear-toggler-bar"></span>
+            <span class="lyear-toggler-bar"></span>
+          </div>
+        </div>
+        
+        <ul class="navbar-right d-flex align-items-center">
+          <li class="dropdown dropdown-notice">
+            <span data-toggle="dropdown" class="icon-item">
+              <i class="mdi mdi-bell-outline"></i>
+              <span class="badge badge-danger">10</span>
+            </span>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="lyear-notifications">
+                
+                <div class="lyear-notifications-title clearfix"  data-stopPropagation="true"><a href="#!" class="float-right">查看全部</a>你有 10 条未读消息</div>
+                <div class="lyear-notifications-info lyear-scroll">
+                  <a href="#!" class="dropdown-item" title="树莓派销量猛增，疫情期间居家工作学习、医疗领域都需要它">树莓派销量猛增，疫情期间居家工作学习、医疗领域都需要它</a>
+                  <a href="#!" class="dropdown-item" title="GNOME 用户体验团队将为 GNOME Shell 提供更多改进">GNOME 用户体验团队将为 GNOME Shell 提供更多改进</a>
+                  <a href="#!" class="dropdown-item" title="Linux On iPhone 即将面世，支持 iOS 的双启动">Linux On iPhone 即将面世，支持 iOS 的双启动</a>
+                  <a href="#!" class="dropdown-item" title="GitHub 私有仓库完全免费面向团队提供">GitHub 私有仓库完全免费面向团队提供</a>
+                  <a href="#!" class="dropdown-item" title="Wasmtime 为 WebAssembly 增加 Go 语言绑定">Wasmtime 为 WebAssembly 增加 Go 语言绑定</a>
+                  <a href="#!" class="dropdown-item" title="红帽借“订阅”成开源一哥，首创者 Cormier 升任总裁">红帽借“订阅”成开源一哥，首创者 Cormier 升任总裁</a>
+                  <a href="#!" class="dropdown-item" title="Zend 宣布推出两项 PHP 新产品">Zend 宣布推出两项 PHP 新产品</a>
+                </div>
+                
+              </div>
+            </div>
+          </li>
+          <!--切换主题配色-->
+		  <li class="dropdown dropdown-skin">
+		    <span data-toggle="dropdown" class="icon-item"><i class="mdi mdi-palette"></i></span>
+			<ul class="dropdown-menu dropdown-menu-right" data-stopPropagation="true">
+              <li class="drop-title"><p>主题</p></li>
+              <li class="drop-skin-li clearfix">
+                <span class="inverse">
+                  <input type="radio" name="site_theme" value="default" id="site_theme_1" checked>
+                  <label for="site_theme_1"></label>
+                </span>
+                <span>
+                  <input type="radio" name="site_theme" value="dark" id="site_theme_2">
+                  <label for="site_theme_2"></label>
+                </span>
+                <span>
+                  <input type="radio" name="site_theme" value="translucent" id="site_theme_3">
+                  <label for="site_theme_3"></label>
+                </span>
+              </li>
+			  <li class="drop-title"><p>LOGO</p></li>
+			  <li class="drop-skin-li clearfix">
+                <span class="inverse">
+                  <input type="radio" name="logo_bg" value="default" id="logo_bg_1" checked>
+                  <label for="logo_bg_1"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_2" id="logo_bg_2">
+                  <label for="logo_bg_2"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_3" id="logo_bg_3">
+                  <label for="logo_bg_3"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_4" id="logo_bg_4">
+                  <label for="logo_bg_4"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_5" id="logo_bg_5">
+                  <label for="logo_bg_5"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_6" id="logo_bg_6">
+                  <label for="logo_bg_6"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_7" id="logo_bg_7">
+                  <label for="logo_bg_7"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_8" id="logo_bg_8">
+                  <label for="logo_bg_8"></label>
+                </span>
+			  </li>
+			  <li class="drop-title"><p>头部</p></li>
+			  <li class="drop-skin-li clearfix">
+                <span class="inverse">
+                  <input type="radio" name="header_bg" value="default" id="header_bg_1" checked>
+                  <label for="header_bg_1"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_2" id="header_bg_2">
+                  <label for="header_bg_2"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_3" id="header_bg_3">
+                  <label for="header_bg_3"></label>
+                </span>
+                <span>
+                  <input type="radio" name="header_bg" value="color_4" id="header_bg_4">
+                  <label for="header_bg_4"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_5" id="header_bg_5">
+                  <label for="header_bg_5"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_6" id="header_bg_6">
+                  <label for="header_bg_6"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_7" id="header_bg_7">
+                  <label for="header_bg_7"></label>
+                </span>
+                <span>
+                  <input type="radio" name="header_bg" value="color_8" id="header_bg_8">
+                  <label for="header_bg_8"></label>
+                </span>
+				</li>
+			  <li class="drop-title"><p>侧边栏</p></li>
+			  <li class="drop-skin-li clearfix">
+                <span class="inverse">
+                  <input type="radio" name="sidebar_bg" value="default" id="sidebar_bg_1" checked>
+                  <label for="sidebar_bg_1"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_2" id="sidebar_bg_2">
+                  <label for="sidebar_bg_2"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_3" id="sidebar_bg_3">
+                  <label for="sidebar_bg_3"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_4" id="sidebar_bg_4">
+                  <label for="sidebar_bg_4"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_5" id="sidebar_bg_5">
+                  <label for="sidebar_bg_5"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_6" id="sidebar_bg_6">
+                  <label for="sidebar_bg_6"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_7" id="sidebar_bg_7">
+                  <label for="sidebar_bg_7"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_8" id="sidebar_bg_8">
+                  <label for="sidebar_bg_8"></label>
+                </span>
+			  </li>
+		    </ul>
+		  </li>
+          <!--切换主题配色-->
+          <li class="dropdown dropdown-profile">
+            <a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle">
+              <img class="img-avatar img-avatar-48 m-r-10" src="images/users/avatar.jpg" alt="笔下光年" />
+              <span>笔下光年</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li>
+                <a class="dropdown-item" href="lyear_pages_profile.html"><i class="mdi mdi-account"></i> 个人信息</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="lyear_pages_edit_pwd.html"><i class="mdi mdi-lock-outline"></i> 修改密码</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)"><i class="mdi mdi-delete"></i> 清空缓存</a>
+              </li>
+              <li class="dropdown-divider"></li>
+              <li>
+                <a class="dropdown-item" href="lyear_pages_login_1.html"><i class="mdi mdi-logout-variant"></i> 退出登录</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+      </nav>
+      
+    </header>
+    <!--End 头部信息-->
+    
+    <!--页面主要内容-->
+    <main class="lyear-layout-content">
+      
+      <div class="container-fluid p-t-15">
+        
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card">
+              <header class="card-header"><div class="card-title">子页面打开TAB页签</div></header>
+              <div class="card-body">
+                
+                <div class="border-example">
+                  <a href="#!" class="js-create-tab" data-title="测试页面" data-url="README.md">打开页签</a>
+                </div>
+                <pre>&lt;a href="#!" class="js-create-tab" data-title="测试页面" data-url="README.md"&gt;打开页签&lt;/a&gt;</pre>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-12">
+            <div class="card">
+              <header class="card-header"><div class="card-title">步骤</div></header>
+              <div class="card-body">
+                
+                <ul class="nav nav-step nav-fill">
+                  <li class="nav-item">
+                    <span>步骤一</span>
+                    <a class="nav-link active" href="#"></a>
+                  </li>
+        
+                  <li class="nav-item">
+                    <span>步骤三</span>
+                    <a class="nav-link" href="#"></a>
+                  </li>
+        
+                  <li class="nav-item">
+                    <span>步骤四</span>
+                    <a class="nav-link" href="#"></a>
+                  </li>
+        
+                  <li class="nav-item">
+                    <span>步骤五</span>
+                    <a class="nav-link" href="#"></a>
+                  </li>
+                </ul>
+                
+                <ul class="nav nav-step nav-fill">
+                  <li class="nav-item complete">
+                    <span>步骤一</span>
+                    <a class="nav-link active" href="#"></a>
+                  </li>
+        
+                  <li class="nav-item">
+                    <span>步骤三</span>
+                    <a class="nav-link active" href="#"></a>
+                  </li>
+        
+                  <li class="nav-item">
+                    <span>步骤四</span>
+                    <a class="nav-link" href="#"></a>
+                  </li>
+        
+                  <li class="nav-item">
+                    <span>步骤五</span>
+                    <a class="nav-link" href="#"></a>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-12">
+            <div class="card">
+              <header class="card-header"><div class="card-title">面包屑导航</div></header>
+              <div class="card-body">
+                
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">Home</li>
+                  </ol>
+                </nav>          
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                  </ol>
+                </nav>          
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Library</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Data</li>
+                  </ol>
+                </nav>
+                <h6>更改分隔符</h6>
+                <p>分隔符通过::before和自动添加到CSS中content。他们可以通过改变来改变 <code>$breadcrumb-divider</code>。该报价是需要函数生成围绕一个字符串的报价，所以如果你想 > 为分隔符，你可以这样做：</p>
+                <pre>$breadcrumb-divider: quote(">");</pre>
+                <p>也可以使用base64嵌入式SVG图标：</p>
+                <pre>$breadcrumb-divider: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPjxwYXRoIGQ9Ik0yLjUgMEwxIDEuNSAzLjUgNCAxIDYuNSAyLjUgOGw0LTQtNC00eiIgZmlsbD0iY3VycmVudENvbG9yIi8+PC9zdmc+);</pre>
+                <p>分隔符可以通过设置 <code>$breadcrumb-divider</code> 为 <code>none</code>：</p>
+                <pre>$breadcrumb-divider: none;</pre>
+                <h6>无障碍处理</h6>
+                <p>为了为障碍浏览提供方便，针对面包屑这样具备导航功能的模块，建议添加一个有意义的标签即 <code>aria-label="breadcrumb"</code> 來描述 <code>&lt;nav&gt;</code> 元素，以及使用 <code>aria-current="page"</code> 到这组导航的最后一个项目，以标明当前页面名称（路径）</p>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="card">
+              <header class="card-header"><div class="card-title">经典幻灯片效果</div></header>
+              <div class="card-body">
+                
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active"><img src="images/slide/img-slide-1.jpg" alt="图片一"></div>
+                    <div class="carousel-item"><img src="images/slide/img-slide-2.jpg" alt="图片二"></div>
+                    <div class="carousel-item"><img src="images/slide/img-slide-3.jpg" alt="图片三"></div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <header class="card-header"><div class="card-title">带控制器的效果</div></header>
+              <div class="card-body">
+                
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active"><img src="images/slide/img-slide-2.jpg" alt="图片一"></div>
+                    <div class="carousel-item"><img src="images/slide/img-slide-3.jpg" alt="图片二"></div>
+                    <div class="carousel-item"><img src="images/slide/img-slide-4.jpg" alt="图片三"></div>
+                  </div>
+                  
+                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <header class="card-header"><div class="card-title">包含姿态指示器</div></header>
+              <div class="card-body">
+                
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active"><img src="images/slide/img-slide-3.jpg" alt="图片一"></div>
+                    <div class="carousel-item"><img src="images/slide/img-slide-4.jpg" alt="图片二"></div>
+                    <div class="carousel-item"><img src="images/slide/img-slide-5.jpg" alt="图片三"></div>
+                  </div>
+                  
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <header class="card-header"><div class="card-title">包含字幕的轮播</div></header>
+              <div class="card-body">
+                
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="images/slide/img-slide-3.jpg" alt="图片一">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>第五十六回</h5>
+                        <p>敏探春兴利除宿弊　时宝钗小惠全大体</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/slide/img-slide-4.jpg" alt="图片二">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>第五十七回</h5>
+                        <p>慧紫鹃情辞试忙玉　慈姨妈爱语慰痴颦</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/slide/img-slide-5.jpg" alt="图片三">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>第五十八回</h5>
+                        <p>杏子阴假凤泣虚凰　茜纱窗真情揆痴理</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
+                  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <header class="card-header"><div class="card-title">切换效果</div></header>
+              <div class="card-body">
+                
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active"><img src="images/slide/img-slide-3.jpg" alt="图片一"></div>
+                    <div class="carousel-item"><img src="images/slide/img-slide-4.jpg" alt="图片二"></div>
+                    <div class="carousel-item"><img src="images/slide/img-slide-5.jpg" alt="图片三"></div>
+                  </div>
+                  
+                  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
+                  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <header class="card-header"><div class="card-title">单个 <code>.carousel-item</code> 间隔</div></header>
+              <div class="card-body">
+                
+                <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active" data-interval="10000"><img src="images/slide/img-slide-5.jpg" alt="图片一"></div>
+                    <div class="carousel-item" data-interval="20000"><img src="images/slide/img-slide-1.jpg" alt="图片二"></div>
+                    <div class="carousel-item"><img src="images/slide/img-slide-2.jpg" alt="图片三"></div>
+                  </div>
+                  
+                  <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
+                  <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-12">
+            <div class="card">
+              <header class="card-header"><div class="card-title">折叠效果</div></header>
+              <div class="card-body">
+                
+                <p>
+                  <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+                </p>
+                <div class="row">
+                  <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                      <div class="card card-bordered card-body">
+                        宝玉听了，心下纳闷，只得踱到潇湘馆，瞧黛玉益发瘦的可怜，问起来，比往日已算大愈了。黛玉见他也比先大瘦了，想起往日之事，不免流下泪来，些微谈了谈，便催宝玉去歇息调养。宝玉只得回来。因记挂着要问芳官那原委，偏有湘云香菱来了，正和袭人芳官说笑，不好叫他，恐人又盘诘，只得耐着。
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                      <div class="card card-bordered card-body">
+                        一时芳官又跟了他干娘去洗头。他干娘偏又先叫了他亲女儿洗过了后，才叫芳官洗。芳官见了这般，便说他偏心，“把你女儿剩水给我洗。我一个月的月钱都是你拿着，沾我的光不算，反倒给我剩东剩西的。”他干娘羞愧变成恼，便骂他：“不识抬举的东西！怪不得人人说戏子没一个好缠的。
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h6>手风琴效果</h6>
+                <div class="accordion" id="accordionExample">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <div class="card-title">
+                        <a data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" href="#!">第五十九回　柳叶渚边嗔莺咤燕　绛云轩里召将飞符</a>
+                      </div>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="card-body">
+                        离送灵日不远，鸳鸯、琥珀、翡翠、玻璃四人都忙着打点贾母之物，玉钏、彩云、彩霞等皆打叠王夫人之物，当面查点与跟随的管事媳妇们。跟随的一共大小六个丫鬟，十个老婆子媳妇子，男人不算。连日收拾驮轿器械。鸳鸯与玉钏儿皆不随去，只看屋子。一面先几日预发帐幔铺陈之物，先有四五个媳妇并几个男人领了出来，坐了几辆车绕道先至下处，铺陈安插等候。
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <div class="card-title">
+                        <a data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" href="#!">第六十回　茉莉粉替去蔷薇硝　玫瑰露引来茯苓霜</a>
+                      </div>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                      <div class="card-body">
+                        话说袭人因问平儿，何事这样忙乱。平儿笑道：“都是世人想不到的，说来也好笑，等几日告诉你，如今没头绪呢，且也不得闲儿。”一语未了，只见李纨的丫鬟来了，说：“平姐姐可在这里，奶奶等你，你怎么不去了？”平儿忙转身出来，口内笑说：“来了，来了。”袭人等笑道：“他奶奶病了，他又成了香饽饽了，都抢不到手。”平儿去了不提。
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <div class="card-title">
+                        <a data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree" href="#!">第六十一回　投鼠忌器宝玉瞒赃　判冤决狱平儿行权</a>
+                      </div>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                      <div class="card-body">
+                        正说着，只听门内又有老婆子向外叫：“小猴儿们，快传你柳婶子去罢，再不来可就误了。”柳家的听了，不顾和小厮说话，忙推门进去，笑说：“不必忙，我来了。”一面来至厨房，——虽有几个同伴的人，他们都不敢自专，单等他来调停分派——一面问众人：“五丫头那去了？”众人都说：“才往茶房里找他们姊妹去了。”
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-12">
+            <div class="card">
+              <header class="card-header"><div class="card-title">超大屏幕</div></header>
+              <div class="card-body">
+                
+                <p>这是一个轻量、灵活的组件，可以选择性地扩展整个视口，以展示您网站上的关键营销信息。</p>
+                <div class="jumbotron">
+                  <h1 class="display-4">聊斋志异</h1>
+                  <p class="lead">《聊斋志异》简称《聊斋》，俗名《鬼狐传》，是中国清朝著名小说家蒲松龄创作的文言短篇小说集。</p>
+                  <hr class="my-4">
+                  <p>《聊斋志异》简称《聊斋》，俗名《鬼狐传》，是中国清代著名小说家蒲松龄创作的文言短篇小说集。全书共有短篇小说491篇（张友鹤《聊斋志异会校会注会评本》，朱其铠《全本新注聊斋志异》为494篇）。题材广泛，内容丰富，艺术成就很高。作品成功地塑造了众多的艺术典型，人物形象鲜明生动，故事情节曲折离奇，结构布局严谨巧妙，文笔简练，描写细腻，堪称文言短篇小说的巅峰之作。</p>
+                  <a class="btn btn-primary btn-lg" href="#" role="button">查看更多</a>
+                </div>
+                <p>想要让广告大屏幕占满当前显示浏览器全屏、不带有圆角，只要添加 <code>.jumbotron-fluid</code> CSS修饰符，并在里面添加一个 <code>.container</code> 或 <code>.container-fluid</code> 内容空间即可。</p>
+                <div class="jumbotron jumbotron-fluid">
+                  <div class="container">
+                    <h1 class="display-4">桃花扇</h1>
+                    <p class="lead">《桃花扇》是一部表现亡国之痛的历史剧。作者将明末侯方域与秦淮艳姬李香君的悲欢离合同南明弘光朝的兴亡有机地结合在一起，塑造了一系列栩栩如生的人物形象，悲剧的结局突破了才子佳人大团圆的传统模式，男女之情与兴亡之感都得到哲理性的升华。</p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    
+    </main>
+    <!--End 页面主要内容-->
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/perfect-scrollbar.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="js/main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta name="keywords" content="LightYear,LightYearAdmin,光年,后台模板,后台管理系统,光年HTML模板">
+<meta name="description" content="Light Year Admin V4是一个基于Bootstrap v4.4.1的后台管理系统的HTML模板。">
+<meta name="author" content="yinq">
+<title>下拉选择 - 光年(Light Year Admin V4)后台管理系统模板</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+<link rel="stylesheet" type="text/css" href="js/bootstrap-select/bootstrap-select.css">
+<link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+
+<body>
+<!--页面loading-->
+<div id="lyear-preloader" class="loading">
+  <div class="ctn-preloader">
+    <div class="round_spinner">
+      <div class="spinner"></div>
+      <img src="images/loading-logo.png" alt="">
+    </div>
+  </div>
+</div>
+<!--页面loading end-->
+<div class="lyear-layout-web">
+  <div class="lyear-layout-container">
+    <!--左侧导航-->
+    <aside class="lyear-layout-sidebar">
+      
+      <!-- logo -->
+      <div id="logo" class="sidebar-header">
+        <a href="index.html"><img src="images/logo-sidebar.png" title="LightYear" alt="LightYear" /></a>
+      </div>
+      <div class="lyear-layout-sidebar-info lyear-scroll"> 
+        
+        <nav class="sidebar-main">
+          <ul class="nav-drawer">
+            <li class="nav-item"> <a href="index.html"><i class="mdi mdi-home"></i> <span>后台首页</span></a> </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-palette"></i> <span>UI 元素</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_ui_typography.html">排版</a> </li>
+                <li> <a href="lyear_ui_grid.html">栅格</a> </li>
+                <li> <a href="lyear_ui_icon.html">图标</a> </li>
+                <li> <a href="lyear_ui_alerts.html">警告框</a> </li>
+                <li> <a href="lyear_ui_buttons.html">按钮</a> </li>
+                <li> <a href="lyear_ui_button_group.html">按钮组</a> </li>
+                <li> <a href="lyear_ui_cards.html">卡片</a> </li>
+                <li> <a href="lyear_ui_tables.html">表格</a> </li>
+                <li> <a href="lyear_ui_modal.html">模态框</a> </li>
+                <li> <a href="lyear_ui_dropdown.html">下拉菜单</a> </li>
+                <li> <a href="lyear_ui_tooltips.html">工具提示</a> </li>
+                <li> <a href="lyear_ui_tabs.html">标签页</a> </li>
+                <li> <a href="lyear_ui_pagination.html">分页</a> </li>
+                <li> <a href="lyear_ui_popovers.html">POP提示</a> </li>
+                <li> <a href="lyear_ui_images.html">图片</a> </li>
+                <li> <a href="lyear_ui_badges.html">徽章</a> </li>
+                <li> <a href="lyear_ui_progress.html">进度条</a> </li>
+                <li> <a href="lyear_ui_list_group.html">列表组</a> </li>
+                <li> <a href="lyear_ui_media_object.html">媒体对象</a> </li>
+                <li> <a href="lyear_ui_navbar.html">导航栏</a> </li>
+                <li> <a href="lyear_ui_scrollspy.html">滚动监听</a> </li>
+                <li> <a href="lyear_ui_spinners.html">加载状态</a> </li>
+                <li> <a href="lyear_ui_toasts.html">消息弹窗</a> </li>
+                <li> <a href="lyear_ui_timeline.html">时光轴</a> </li>
+                <li> <a href="lyear_ui_other.html">其他</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-format-align-justify"></i> <span>表单</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_forms_elements.html">基本元素</a> </li>
+                <li> <a href="lyear_forms_input_group.html">输入框组</a> </li>
+                <li> <a href="lyear_forms_radio.html">单选框</a> </li>
+                <li> <a href="lyear_forms_checkbox.html">复选框</a> </li>
+                <li> <a href="lyear_forms_switches.html">开关</a> </li>
+                <li> <a href="lyear_forms_range.html">范围选择</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-tools"></i> <span>工具类</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_utilities_borders.html">边框</a> </li>
+                <li> <a href="lyear_utilities_colors.html">颜色</a> </li>
+                <li> <a href="lyear_utilities_display.html">显示属性</a> </li>
+                <li> <a href="lyear_utilities_flex.html">弹性布局</a> </li>
+                <li> <a href="lyear_utilities_float.html">浮动</a> </li>
+                <li> <a href="lyear_utilities_sizing.html">尺寸</a> </li>
+                <li> <a href="lyear_utilities_spacing.html">间隔</a> </li>
+                <li> <a href="lyear_utilities_stretched_link.html">延伸链接</a> </li>
+                <li> <a href="lyear_utilities_text.html">文本</a> </li>
+                <li> <a href="lyear_utilities_other.html">其他</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-file-outline"></i> <span>示例页面</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_pages_doc.html">文档列表</a> </li>
+                <li> <a href="lyear_pages_gallery.html">图库列表</a> </li>
+                <li> <a href="lyear_pages_config.html">网站配置</a> </li>
+                <li> <a href="lyear_pages_rabc.html">设置权限</a> </li>
+                <li> <a href="lyear_pages_add_doc.html">新增文档</a> </li>
+                <li> <a href="lyear_pages_guide.html">表单向导</a> </li>
+                <li> <a href="lyear_pages_data_table.html">表格插件</a> </li>
+                <li> <a href="lyear_pages_login_1.html" target="_blank">登录页面1</a> </li>
+                <li> <a href="lyear_pages_login_2.html" target="_blank">登录页面2</a> </li>
+                <li> <a href="lyear_pages_login_3.html" target="_blank">登录页面3</a> </li>
+                <li> <a href="lyear_pages_login_4.html" target="_blank">登录页面4</a> </li>
+                <li> <a href="lyear_pages_error.html" target="_blank">错误页面</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav active open">
+              <a href="javascript:void(0)"><i class="mdi mdi-language-javascript"></i> <span>JS 插件</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_js_datepicker.html">日期选取器</a> </li>
+                <li> <a href="lyear_js_colorpicker.html">选色器</a> </li>
+                <li> <a href="lyear_js_chartjs.html">Chart.js</a> </li>
+                <li> <a href="lyear_js_jconfirm.html">对话框</a> </li>
+                <li> <a href="lyear_js_tags_input.html">标签插件</a> </li>
+                <li> <a href="lyear_js_notify.html">通知消息</a> </li>
+                <li> <a href="lyear_js_maxlength.html">长度判断</a> </li>
+                <li class="active"> <a href="lyear_js_select.html">下拉选择</a> </li>
+                <li> <a href="lyear_js_fullcalendar.html">日程插件</a> </li>
+                <li> <a href="lyear_js_loading.html">loading插件</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-menu"></i> <span>多级菜单</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="#!">一级菜单</a> </li>
+                <li class="nav-item nav-item-has-subnav"> 
+                  <a href="#!">一级菜单</a>
+                  <ul class="nav nav-subnav">
+                    <li> <a href="#!">二级菜单</a> </li>
+                    <li class="nav-item nav-item-has-subnav"> 
+                      <a href="#!">二级菜单</a>
+                      <ul class="nav nav-subnav">
+                        <li> <a href="#!">三级菜单</a> </li>
+                        <li> <a href="#!">三级菜单</a> </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li> <a href="#!">一级菜单</a> </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        
+        <div class="sidebar-footer">
+          <p class="copyright">Copyright &copy; 2019. <a target="_blank" href="http://lyear.itshubao.com">IT书包</a> All rights reserved.</p>
+        </div>
+      </div>
+      
+    </aside>
+    <!--End 左侧导航-->
+    
+    <!--头部信息-->
+    <header class="lyear-layout-header">
+      
+      <nav class="navbar">
+      
+        <div class="navbar-left">
+          <div class="lyear-aside-toggler">
+            <span class="lyear-toggler-bar"></span>
+            <span class="lyear-toggler-bar"></span>
+            <span class="lyear-toggler-bar"></span>
+          </div>
+        </div>
+        
+        <ul class="navbar-right d-flex align-items-center">
+          <li class="dropdown dropdown-notice">
+            <span data-toggle="dropdown" class="icon-item">
+              <i class="mdi mdi-bell-outline"></i>
+              <span class="badge badge-danger">10</span>
+            </span>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="lyear-notifications">
+                
+                <div class="lyear-notifications-title clearfix"  data-stopPropagation="true"><a href="#!" class="float-right">查看全部</a>你有 10 条未读消息</div>
+                <div class="lyear-notifications-info lyear-scroll">
+                  <a href="#!" class="dropdown-item" title="树莓派销量猛增，疫情期间居家工作学习、医疗领域都需要它">树莓派销量猛增，疫情期间居家工作学习、医疗领域都需要它</a>
+                  <a href="#!" class="dropdown-item" title="GNOME 用户体验团队将为 GNOME Shell 提供更多改进">GNOME 用户体验团队将为 GNOME Shell 提供更多改进</a>
+                  <a href="#!" class="dropdown-item" title="Linux On iPhone 即将面世，支持 iOS 的双启动">Linux On iPhone 即将面世，支持 iOS 的双启动</a>
+                  <a href="#!" class="dropdown-item" title="GitHub 私有仓库完全免费面向团队提供">GitHub 私有仓库完全免费面向团队提供</a>
+                  <a href="#!" class="dropdown-item" title="Wasmtime 为 WebAssembly 增加 Go 语言绑定">Wasmtime 为 WebAssembly 增加 Go 语言绑定</a>
+                  <a href="#!" class="dropdown-item" title="红帽借“订阅”成开源一哥，首创者 Cormier 升任总裁">红帽借“订阅”成开源一哥，首创者 Cormier 升任总裁</a>
+                  <a href="#!" class="dropdown-item" title="Zend 宣布推出两项 PHP 新产品">Zend 宣布推出两项 PHP 新产品</a>
+                </div>
+                
+              </div>
+            </div>
+          </li>
+          <!--切换主题配色-->
+		  <li class="dropdown dropdown-skin">
+		    <span data-toggle="dropdown" class="icon-item"><i class="mdi mdi-palette"></i></span>
+			<ul class="dropdown-menu dropdown-menu-right" data-stopPropagation="true">
+              <li class="drop-title"><p>主题</p></li>
+              <li class="drop-skin-li clearfix">
+                <span class="inverse">
+                  <input type="radio" name="site_theme" value="default" id="site_theme_1" checked>
+                  <label for="site_theme_1"></label>
+                </span>
+                <span>
+                  <input type="radio" name="site_theme" value="dark" id="site_theme_2">
+                  <label for="site_theme_2"></label>
+                </span>
+                <span>
+                  <input type="radio" name="site_theme" value="translucent" id="site_theme_3">
+                  <label for="site_theme_3"></label>
+                </span>
+              </li>
+			  <li class="drop-title"><p>LOGO</p></li>
+			  <li class="drop-skin-li clearfix">
+                <span class="inverse">
+                  <input type="radio" name="logo_bg" value="default" id="logo_bg_1" checked>
+                  <label for="logo_bg_1"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_2" id="logo_bg_2">
+                  <label for="logo_bg_2"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_3" id="logo_bg_3">
+                  <label for="logo_bg_3"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_4" id="logo_bg_4">
+                  <label for="logo_bg_4"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_5" id="logo_bg_5">
+                  <label for="logo_bg_5"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_6" id="logo_bg_6">
+                  <label for="logo_bg_6"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_7" id="logo_bg_7">
+                  <label for="logo_bg_7"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_8" id="logo_bg_8">
+                  <label for="logo_bg_8"></label>
+                </span>
+			  </li>
+			  <li class="drop-title"><p>头部</p></li>
+			  <li class="drop-skin-li clearfix">
+                <span class="inverse">
+                  <input type="radio" name="header_bg" value="default" id="header_bg_1" checked>
+                  <label for="header_bg_1"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_2" id="header_bg_2">
+                  <label for="header_bg_2"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_3" id="header_bg_3">
+                  <label for="header_bg_3"></label>
+                </span>
+                <span>
+                  <input type="radio" name="header_bg" value="color_4" id="header_bg_4">
+                  <label for="header_bg_4"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_5" id="header_bg_5">
+                  <label for="header_bg_5"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_6" id="header_bg_6">
+                  <label for="header_bg_6"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_7" id="header_bg_7">
+                  <label for="header_bg_7"></label>
+                </span>
+                <span>
+                  <input type="radio" name="header_bg" value="color_8" id="header_bg_8">
+                  <label for="header_bg_8"></label>
+                </span>
+				</li>
+			  <li class="drop-title"><p>侧边栏</p></li>
+			  <li class="drop-skin-li clearfix">
+                <span class="inverse">
+                  <input type="radio" name="sidebar_bg" value="default" id="sidebar_bg_1" checked>
+                  <label for="sidebar_bg_1"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_2" id="sidebar_bg_2">
+                  <label for="sidebar_bg_2"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_3" id="sidebar_bg_3">
+                  <label for="sidebar_bg_3"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_4" id="sidebar_bg_4">
+                  <label for="sidebar_bg_4"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_5" id="sidebar_bg_5">
+                  <label for="sidebar_bg_5"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_6" id="sidebar_bg_6">
+                  <label for="sidebar_bg_6"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_7" id="sidebar_bg_7">
+                  <label for="sidebar_bg_7"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_8" id="sidebar_bg_8">
+                  <label for="sidebar_bg_8"></label>
+                </span>
+			  </li>
+		    </ul>
+		  </li>
+          <!--切换主题配色-->
+          <li class="dropdown dropdown-profile">
+            <a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle">
+              <img class="img-avatar img-avatar-48 m-r-10" src="images/users/avatar.jpg" alt="笔下光年" />
+              <span>笔下光年</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li>
+                <a class="dropdown-item" href="lyear_pages_profile.html"><i class="mdi mdi-account"></i> 个人信息</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="lyear_pages_edit_pwd.html"><i class="mdi mdi-lock-outline"></i> 修改密码</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)"><i class="mdi mdi-delete"></i> 清空缓存</a>
+              </li>
+              <li class="dropdown-divider"></li>
+              <li>
+                <a class="dropdown-item" href="lyear_pages_login_1.html"><i class="mdi mdi-logout-variant"></i> 退出登录</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+      </nav>
+      
+    </header>
+    <!--End 头部信息-->
+    
+    <!--页面主要内容-->
+    <main class="lyear-layout-content">
+      
+      <div class="container-fluid p-t-15">
+        
+        <div class="row">
+          
+          <div class="col-lg-12">
+            <div class="card">
+              <header class="card-header"><div class="card-title">下拉选择</div></header>
+              <div class="card-body">
+                
+                <p>插件使用bootstrap-select 1.13.17，文档地址：<a href="https://www.bootstrapselect.cn/" target="_blank">https://www.bootstrapselect.cn/</a></p>
+                <p>4.*版本默认样式为 <code>btn-light</code>，因样式颜色太浅，这个改为 <code>btn-default</code>，另将默认的字体图标设定为 <code>mdi</code>。</p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <p>默认</p>
+                    <div class="form-group">
+                      <label for="example-1">你是一名</label>
+                      <select class="form-control selectpicker" name="example-1" id="example-1">
+                        <option value="1" selected>码奴</option>
+                        <option value="2">码农</option>
+                        <option value="3">码匠</option>
+                        <option value="4">码神</option>
+                      </select>
+                    </div>
+                    <p>选择带有optgroups的框</p>
+                    <div class="form-group">
+                      <label for="example-2">野外宿营要带</label>
+                      <select class="form-control selectpicker" name="example-2" id="example-2">
+                        <optgroup label="食物">
+                          <option>零食</option>
+                          <option>面包</option>
+                          <option>调料</option>
+                        </optgroup>
+                        <optgroup label="物品">
+                          <option>帐篷</option>
+                          <option>手电筒</option>
+                          <option>卫生纸</option>
+                        </optgroup>
+                      </select>
+                    </div>
+                    <p>多选</p>
+                    <div class="form-group">
+                      <label for="example-3">中国足球为什么不行</label>
+                      <select class="form-control selectpicker" name="example-3" id="example-3" multiple>
+                        <option>教练不行</option>
+                        <option>态度不行</option>
+                        <option>球员不行</option>
+                        <option>哪都不行</option>
+                      </select>
+                    </div>
+                    <p>实时搜索</p>
+                    <div class="form-group">
+                      <label for="example-4">杰伦的巅峰专辑是</label>
+                      <select class="form-control selectpicker" data-live-search="true" name="example-4" id="example-4">
+                        <option>范特西</option>
+                        <option>八度空间</option>
+                        <option>叶惠美</option>
+                        <option>七里香</option>
+                        <option data-tokens="夜曲">十一月的肖邦</option><!--option上可使用data-tokens用来提高可搜索性-->
+                        <option>依然范特西</option>
+                        <option>我很忙</option>
+                      </select>
+                    </div>
+                    <p>限制选择的数量</p>
+                    <div class="form-group">
+                      <label for="example-5">你最想去的城市是</label>
+                      <select class="form-control selectpicker" multiple data-max-options="2" name="example-5" id="example-5">
+                        <option>重庆</option>
+                        <option>北京</option>
+                        <option>杭州</option>
+                        <option>厦门</option>
+                        <option>上海</option>
+                        <option>大理</option>
+                      </select>
+                    </div>
+                    <p>设置单个选项的样式</p>
+                    <div class="form-group">
+                      <label for="example-11">介绍下自己吧</label>
+                      <select class="form-control selectpicker" name="example-11" id="example-11">
+                        <option>我是默认</option>
+                        <option class="bg-danger">我是小红</option>
+                        <option style="background: #5cb85c; color: #fff; padding-left: 8px">我是往右侧靠近小绿</option>
+                      </select>
+                    </div>
+                    <p>自定义图标</p>
+                    <div class="form-group">
+                      <label for="example-12">添加 data-icon</label>
+                      <select class="form-control selectpicker" name="example-12" id="example-12">
+                        <option data-icon="mdi-car-estate m-r-5">卡车</option>
+                        <option data-icon="mdi-file-word m-r-5">文档</option>
+                        <option data-icon="mdi-music-circle-outline m-r-5">音乐</option>
+                      </select>
+                    </div>
+                    <p>取消/选择所有选项</p>
+                    <div class="form-group">
+                      <label for="example-15">我全/不要</label>
+                      <select class="form-control selectpicker" multiple data-actions-box="true" name="example-15" id="example-15">
+                        <option>李白</option>
+                        <option>杜甫</option>
+                        <option>杜牧</option>
+                      </select>
+                    </div>
+                    <p>菜单标题</p>
+                    <div class="form-group">
+                      <label for="example-17">三国鼎立</label>
+                      <select class="form-control selectpicker" data-header="选择一位大将吧" name="example-17" id="example-17">
+                        <option>典韦</option>
+                        <option>许褚</option>
+                        <option>赵云</option>
+                        <option>关羽</option>
+                        <option>黄忠</option>
+                        <option>马超</option>
+                        <option>张飞</option>
+                        <option>太史慈</option>
+                        <option>周泰</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <p>自定义文字(占位符)</p>
+                    <div class="form-group">
+                      <label for="example-6">您最想要什么</label>
+                      <select class="form-control selectpicker" multiple title="小伙子选择一个吧..." name="example-6" id="example-6">
+                        <option>吊打海内外的编程技术</option>
+                        <option>迷倒万千少女的颜值</option>
+                        <option>马云大大的财富</option>
+                      </select>
+                    </div>
+                    <p>单个选项的替代文本</p>
+                    <div class="form-group">
+                      <label for="example-7">这赛季谁将带领球队夺冠</label>
+                      <select class="form-control selectpicker" name="example-7" id="example-7">
+                        <option title="詹姆斯,戴维斯">湖人</option>
+                        <option title="莱安纳德,保罗乔治,路威">快船</option>
+                        <option title="约基奇,穆雷">掘金</option>
+                        <option title="字母哥,米德尔顿">雄鹿</option>
+                        <option title="沃克,塔图姆">凯尔特人</option>
+                        <option title="巴特勒,莱恩">热火</option>
+                      </select>
+                    </div>
+                    <p>选定后的文本格式</p>
+                    <div class="form-group">
+                      <label for="example-8">选择人员组一个球队吧</label>
+                      <!--select class="form-control selectpicker" multiple data-selected-text-format="count" name="example-8" id="example-8"-->
+                      <select class="form-control selectpicker" multiple data-selected-text-format="count > 3" name="example-8" id="example-8">
+                        <option>乔丹</option>
+                        <option>艾弗森</option>
+                        <option>约翰逊</option>
+                        <option>奥尼尔</option>
+                        <option>詹姆斯</option>
+                        <option>库里</option>
+                        <option>邓肯</option>
+                        <option>拉塞尔</option>
+                        <option>奥拉朱旺</option>
+                      </select>
+                    </div>
+                    <p>自定义样式</p>
+                    <div class="form-group">
+                      <label for="example-9">最厉害的将领</label>
+                      <select class="form-control selectpicker" name="example-9" id="example-9" data-style="btn-primary">
+                        <option>李牧</option>
+                        <option>王翦</option>
+                        <option>廉颇</option>
+                        <option>白起</option>
+                        <option>周亚夫</option>
+                        <option>李广</option>
+                        <option>霍去病</option>
+                        <option>卫青</option>
+                        <option>李靖</option>
+                        <option>岳飞</option>
+                        <option>戚继光</option>
+                      </select>
+                    </div>
+                    <p>勾选所选选项</p>
+                    <div class="form-group">
+                      <label for="example-10">谁最厉害</label>
+                      <select class="form-control selectpicker show-tick">
+                        <option>吕布</option>
+                        <option>项羽</option>
+                        <option>李元霸</option>
+                      </select>
+                    </div>
+                    <p>自定义内容</p>
+                    <div class="form-group">
+                      <label for="example-13">四大名著</label>
+                      <select class="form-control selectpicker" name="example-13" id="example-13">
+                        <option data-content="&lt;span class=&apos;badge badge-primary&apos;&gt;《三国演义》&lt;/span&gt;">《三国演义》</option>
+                        <option data-content="&lt;span class=&apos;badge badge-success&apos;&gt;《红楼梦》&lt;/span&gt;">《红楼梦》</option>
+                        <option data-content="&lt;span class=&apos;badge badge-info&apos;&gt;《水浒传》&lt;/span&gt;">《水浒传》</option>
+                        <option data-content="&lt;span class=&apos;badge badge-danger&apos;&gt;《西游记》&lt;/span&gt;">《西游记》</option>
+                      </select>
+                    </div>
+                    <p>添加子文本</p>
+                    <div class="form-group">
+                      <label for="example-14">古文典籍</label>
+                      <select class="form-control selectpicker" name="example-14" id="example-14">
+                        <option data-subtext="司马光">《资治通鉴》</option>
+                        <option data-subtext="司马迁">《史记》</option>
+                        <option data-subtext="解缙、姚广孝">《永乐大典》</option>
+                      </select>
+                    </div>
+                    <p>分割线</p>
+                    <div class="form-group">
+                      <label for="example-16">中国三大球</label>
+                      <select class="form-control selectpicker" name="example-16" id="example-16">
+                        <option>中国女排</option>
+                        <option>中国女篮</option>
+                        <option>中国女足</option>
+                        <option data-divider="true"></option>
+                        <option>中国男篮</option>
+                        <option>中国男排</option>
+                        <option>中国男足</option>
+                      </select>
+                    </div>
+                    <p>禁用菜单</p>
+                    <div class="form-group">
+                      <label for="example-16">别人家的工作</label>
+                      <select class="form-control selectpicker" name="example-18" id="example-18" disabled>
+                        <option>钱多</option>
+                        <option>活少</option>
+                        <option>假多</option>
+                      </select>
+                    </div>
+                    <p>禁用选项</p>
+                    <div class="form-group">
+                      <select class="form-control selectpicker">
+                        <option>汉朝</option>
+                        <option disabled>唐朝</option>
+                        <option>元朝</option>
+                      </select>
+                    </div>
+      
+                    <div class="form-group">
+                      <select class="form-control selectpicker">
+                        <optgroup label="篮球" disabled>
+                          <option>乔丹</option>
+                          <option>科比</option>
+                          <option>詹姆斯</option>
+                        </optgroup>
+                        <optgroup label="足球">
+                          <option>贝利</option>
+                          <option>C罗</option>
+                          <option>梅西</option>
+                        </optgroup>
+                      </select>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+                <p>布局宽度</p>
+                <div class="row">
+                  <div class="col-3">
+                    <div class="form-group">
+                      <select class="form-control selectpicker">
+                        <option>及时雨宋江</option>
+                        <option>玉麒麟卢俊义</option>
+                        <option>智多星吴用</option>
+                      </select>
+                    </div>
+                  </div>
+      
+                  <div class="col-9">
+                    <div class="form-group">
+                      <select class="form-control selectpicker">
+                        <option>入云龙公孙胜</option>
+                        <option>大刀关胜</option>
+                        <option>豹子头林冲</option>
+                      </select>
+                    </div>
+                  </div>
+      
+                  <div class="col-4">
+                    <div class="form-group">
+                      <select class="form-control selectpicker">
+                        <option>霹雳火秦明</option>
+                        <option>双鞭呼延灼</option>
+                        <option>小李广花荣</option>
+                      </select>
+                    </div>
+                  </div>
+      
+                  <div class="col-8">
+                    <div class="form-group">
+                      <select class="form-control selectpicker">
+                        <option>小旋风柴进</option>
+                        <option>扑天雕李应</option>
+                        <option>美髯公朱仝</option>
+                      </select>
+                    </div>
+                  </div>
+      
+                  <div class="col-5">
+                    <div class="form-group">
+                      <select class="form-control selectpicker">
+                        <option>花和尚鲁智深</option>
+                        <option>行者武松</option>
+                        <option>双枪将董平</option>
+                      </select>
+                    </div>
+                  </div>
+      
+                  <div class="col-7">
+                    <div class="form-group">
+                      <select class="form-control selectpicker">
+                        <option>没羽箭张清</option>
+                        <option>青面兽杨志</option>
+                        <option>急先锋索超</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+      
+                <hr>
+                <p>使用 data-width 设置宽度</p>
+                <div class="form-group">
+                  <p>添加 <code>data-width="auto"</code></p>
+                  <select class="selectpicker" data-width="auto">
+                    <option>神行太保戴宗</option>
+                    <option>赤发鬼刘唐</option>
+                    <option>黑旋风李逵</option>
+                    <option>九纹龙史进</option>
+                  </select>
+                </div>
+      
+                <div class="form-group">
+                  <p>添加 <code>data-width="fit"</code></p>
+                  <select class="selectpicker" data-width="fit">
+                    <option>没遮拦穆弘</option>
+                    <option>插翅虎雷横</option>
+                    <option>混江龙李俊</option>
+                    <option>立地太岁阮小二</option>
+                  </select>
+                </div>
+      
+                <div class="form-group">
+                  <p>添加 <code>data-width="200px"</code></p>
+                  <select class="selectpicker" data-width="200px">
+                    <option>船火儿张横</option>
+                    <option>短命二郎阮小五</option>
+                    <option>浪里白条张顺</option>
+                    <option>活阎罗阮小七</option>
+                  </select>
+                </div>
+      
+                <div class="form-group">
+                  <p>添加 <code>data-width="75%"</code></p>
+                  <select class="selectpicker" data-width="75%">
+                    <option>病关索杨雄</option>
+                    <option>拼命三郎石秀</option>
+                    <option>两头蛇解珍</option>
+                    <option>双尾蝎解宝</option>
+                    <option>浪子燕青</option>
+                  </select>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+      
+    </main>
+    <!--End 页面主要内容-->
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/perfect-scrollbar.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-select/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-select/i18n/defaults-zh_CN.min.js"></script>
+<script type="text/javascript" src="js/main.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    // 默认
+    $('.selectpicker').selectpicker();
+});
+</script>
+</body>
+</html>

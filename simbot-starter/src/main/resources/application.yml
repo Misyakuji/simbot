@@ -1,27 +1,3 @@
-
-simbot:
-  # 是否在bot注册完成后自动启动他们。
-  # 默认为 true
-  auto-start-bots: true
-
-  # 自定义配置bot资源文件的扫描路径。
-  # 默认为 'classpath:simbot-bots/*.bot*'
-  bot-configuration-resources:
-    - 'classpath:simbot-bots/*.bot*'
-
-  # 如果需要，此处配置扫描顶层函数形式的 Binder Factory。
-  # 默认不扫描
-  # top-level-binder-scan-package:
-  #   - 'example.binder.foo'
-  #   - 'example.binder.bar'
-
-  # 如果需要，此处配置扫描顶层函数形式的监听函数。
-  # 默认不扫描
-  # top-level-listener-scan-package:
-  #   - 'example.listener.foo'
-  #   - 'example.listener.bar'
-
-  master-qq: 67252271
-  groups: 710117186,1043409458,559381755
-server:
-  port: 8888
+spring:
+  profiles:
+    active: robot,web

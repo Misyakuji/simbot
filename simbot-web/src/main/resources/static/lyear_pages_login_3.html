@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta name="keywords" content="LightYear,LightYearAdmin,光年,后台模板,后台管理系统,光年HTML模板">
+<meta name="description" content="Light Year Admin V4是一个基于Bootstrap v4.4.1的后台管理系统的HTML模板。">
+<meta name="author" content="yinq">
+<title>登录页面三 - 光年(Light Year Admin V4)后台管理系统模板</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.min.css">
+<style>
+.login-form .has-feedback {
+    position: relative;
+}
+.login-form .has-feedback .form-control {
+    padding-left: 36px;
+}
+.login-form .has-feedback .mdi {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    z-index: 4;
+    color: #dcdcdc;
+    display: block;
+    text-align: center;
+    pointer-events: none;
+}
+.login-form .has-feedback.row .mdi {
+    left: 15px;
+}
+.login-form .form-group:last-child,
+.login-right p:last-child {
+    margin-bottom: 0px;
+}
+.login-right {
+    background: #67b26f!important;
+    background: -moz-linear-gradient(45deg,#67b26f 0,#4ca2cd 100%)!important;
+    background: -webkit-linear-gradient(45deg,#67b26f 0,#4ca2cd 100%)!important;
+    background: linear-gradient(45deg,#67b26f 0,#4ca2cd 100%)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67b26f', endColorstr='#4ca2cd', GradientType=1 )!important;
+}
+.login-box {
+    max-width: 700px;
+}
+.login-right {
+    max-width: 50%;
+}
+</style>
+</head>
+  
+<body class="center-vh" style="background-image: url(images/login-bg-3.jpg); background-size: cover;">
+<!--页面loading-->
+<div id="lyear-preloader" class="loading">
+  <div class="ctn-preloader">
+    <div class="round_spinner">
+      <div class="spinner"></div>
+      <img src="images/loading-logo.png" alt="">
+    </div>
+  </div>
+</div>
+<!--页面loading end-->
+<div class="bg-translucent p-2">
+  <div class="flex-box bg-white login-box">
+    <div class="login-left p-5">
+      
+      <div class="text-center mb-3 d-sm-none">
+        <a href="index.html"> <img alt="light year admin" src="images/logo-sidebar.png"> </a>
+      </div>
+      <form action="#!" method="post" class="login-form">
+        <div class="form-group has-feedback">
+          <span class="mdi mdi-account" aria-hidden="true"></span>
+          <input type="text" class="form-control" id="username" placeholder="用户名">
+        </div>
+    
+        <div class="form-group has-feedback">
+          <span class="mdi mdi-lock" aria-hidden="true"></span>
+          <input type="password" class="form-control" id="password" placeholder="密码">
+        </div>
+        
+        <div class="form-group has-feedback row">
+          <div class="col-7">
+            <span class="mdi mdi-check-all form-control-feedback" aria-hidden="true"></span>
+            <input type="text" name="captcha" class="form-control" placeholder="验证码">
+          </div>
+          <div class="col-5 text-right">
+            <img src="images/captcha.png" class="pull-right" id="captcha" style="cursor: pointer;" onclick="this.src=this.src+'?d='+Math.random();" title="点击刷新" alt="captcha">
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="rememberme">
+            <label class="custom-control-label not-user-select" for="rememberme">5天内自动登录</label>
+          </div>
+        </div>
+    
+        <div class="form-group">
+          <button class="btn btn-block btn-primary" type="submit">立即登录</button>
+        </div>
+      </form>
+    </div>
+    <div class="login-right p-5 d-none d-sm-block">
+      <p class="mb-3"><img src="images/logo.png" class="m-b-md m-t-xs" alt="logo" /></p>
+      <p class="text-white">Light Year Admin V4是一个后台管理系统的HTML模板，基于Bootstrap v4.4.1。</p>
+      <p class="text-white align-self-end">Copyright © 2020 <a href="http://lyear.itshubao.com">IT书包</a>. All right reserved</p>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.min.js"></script>
+<script type="text/javascript">;</script>
+</body>
+</html>

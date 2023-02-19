@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta name="keywords" content="LightYear,LightYearAdmin,光年,后台模板,后台管理系统,光年HTML模板">
+<meta name="description" content="Light Year Admin V4是一个基于Bootstrap v4.4.1的后台管理系统的HTML模板。">
+<meta name="author" content="yinq">
+<title>对话框 - 光年(Light Year Admin V4)后台管理系统模板</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+<link rel="stylesheet" type="text/css" href="js/jquery-confirm/jquery-confirm.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+
+<body>
+<!--页面loading-->
+<div id="lyear-preloader" class="loading">
+  <div class="ctn-preloader">
+    <div class="round_spinner">
+      <div class="spinner"></div>
+      <img src="images/loading-logo.png" alt="">
+    </div>
+  </div>
+</div>
+<!--页面loading end-->
+<div class="lyear-layout-web">
+  <div class="lyear-layout-container">
+    <!--左侧导航-->
+    <aside class="lyear-layout-sidebar">
+      
+      <!-- logo -->
+      <div id="logo" class="sidebar-header">
+        <a href="index.html"><img src="images/logo-sidebar.png" title="LightYear" alt="LightYear" /></a>
+      </div>
+      <div class="lyear-layout-sidebar-info lyear-scroll"> 
+        
+        <nav class="sidebar-main">
+          <ul class="nav-drawer">
+            <li class="nav-item"> <a href="index.html"><i class="mdi mdi-home"></i> <span>后台首页</span></a> </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-palette"></i> <span>UI 元素</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_ui_typography.html">排版</a> </li>
+                <li> <a href="lyear_ui_grid.html">栅格</a> </li>
+                <li> <a href="lyear_ui_icon.html">图标</a> </li>
+                <li> <a href="lyear_ui_alerts.html">警告框</a> </li>
+                <li> <a href="lyear_ui_buttons.html">按钮</a> </li>
+                <li> <a href="lyear_ui_button_group.html">按钮组</a> </li>
+                <li> <a href="lyear_ui_cards.html">卡片</a> </li>
+                <li> <a href="lyear_ui_tables.html">表格</a> </li>
+                <li> <a href="lyear_ui_modal.html">模态框</a> </li>
+                <li> <a href="lyear_ui_dropdown.html">下拉菜单</a> </li>
+                <li> <a href="lyear_ui_tooltips.html">工具提示</a> </li>
+                <li> <a href="lyear_ui_tabs.html">标签页</a> </li>
+                <li> <a href="lyear_ui_pagination.html">分页</a> </li>
+                <li> <a href="lyear_ui_popovers.html">POP提示</a> </li>
+                <li> <a href="lyear_ui_images.html">图片</a> </li>
+                <li> <a href="lyear_ui_badges.html">徽章</a> </li>
+                <li> <a href="lyear_ui_progress.html">进度条</a> </li>
+                <li> <a href="lyear_ui_list_group.html">列表组</a> </li>
+                <li> <a href="lyear_ui_media_object.html">媒体对象</a> </li>
+                <li> <a href="lyear_ui_navbar.html">导航栏</a> </li>
+                <li> <a href="lyear_ui_scrollspy.html">滚动监听</a> </li>
+                <li> <a href="lyear_ui_spinners.html">加载状态</a> </li>
+                <li> <a href="lyear_ui_toasts.html">消息弹窗</a> </li>
+                <li> <a href="lyear_ui_timeline.html">时光轴</a> </li>
+                <li> <a href="lyear_ui_other.html">其他</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-format-align-justify"></i> <span>表单</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_forms_elements.html">基本元素</a> </li>
+                <li> <a href="lyear_forms_input_group.html">输入框组</a> </li>
+                <li> <a href="lyear_forms_radio.html">单选框</a> </li>
+                <li> <a href="lyear_forms_checkbox.html">复选框</a> </li>
+                <li> <a href="lyear_forms_switches.html">开关</a> </li>
+                <li> <a href="lyear_forms_range.html">范围选择</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-tools"></i> <span>工具类</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_utilities_borders.html">边框</a> </li>
+                <li> <a href="lyear_utilities_colors.html">颜色</a> </li>
+                <li> <a href="lyear_utilities_display.html">显示属性</a> </li>
+                <li> <a href="lyear_utilities_flex.html">弹性布局</a> </li>
+                <li> <a href="lyear_utilities_float.html">浮动</a> </li>
+                <li> <a href="lyear_utilities_sizing.html">尺寸</a> </li>
+                <li> <a href="lyear_utilities_spacing.html">间隔</a> </li>
+                <li> <a href="lyear_utilities_stretched_link.html">延伸链接</a> </li>
+                <li> <a href="lyear_utilities_text.html">文本</a> </li>
+                <li> <a href="lyear_utilities_other.html">其他</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-file-outline"></i> <span>示例页面</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_pages_doc.html">文档列表</a> </li>
+                <li> <a href="lyear_pages_gallery.html">图库列表</a> </li>
+                <li> <a href="lyear_pages_config.html">网站配置</a> </li>
+                <li> <a href="lyear_pages_rabc.html">设置权限</a> </li>
+                <li> <a href="lyear_pages_add_doc.html">新增文档</a> </li>
+                <li> <a href="lyear_pages_guide.html">表单向导</a> </li>
+                <li> <a href="lyear_pages_data_table.html">表格插件</a> </li>
+                <li> <a href="lyear_pages_login_1.html" target="_blank">登录页面1</a> </li>
+                <li> <a href="lyear_pages_login_2.html" target="_blank">登录页面2</a> </li>
+                <li> <a href="lyear_pages_login_3.html" target="_blank">登录页面3</a> </li>
+                <li> <a href="lyear_pages_login_4.html" target="_blank">登录页面4</a> </li>
+                <li> <a href="lyear_pages_error.html" target="_blank">错误页面</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav active open">
+              <a href="javascript:void(0)"><i class="mdi mdi-language-javascript"></i> <span>JS 插件</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_js_datepicker.html">日期选取器</a> </li>
+                <li> <a href="lyear_js_colorpicker.html">选色器</a> </li>
+                <li> <a href="lyear_js_chartjs.html">Chart.js</a> </li>
+                <li class="active"> <a href="lyear_js_jconfirm.html">对话框</a> </li>
+                <li> <a href="lyear_js_tags_input.html">标签插件</a> </li>
+                <li> <a href="lyear_js_notify.html">通知消息</a> </li>
+                <li> <a href="lyear_js_maxlength.html">长度判断</a> </li>
+                <li> <a href="lyear_js_select.html">下拉选择</a> </li>
+                <li> <a href="lyear_js_fullcalendar.html">日程插件</a> </li>
+                <li> <a href="lyear_js_loading.html">loading插件</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-menu"></i> <span>多级菜单</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="#!">一级菜单</a> </li>
+                <li class="nav-item nav-item-has-subnav"> 
+                  <a href="#!">一级菜单</a>
+                  <ul class="nav nav-subnav">
+                    <li> <a href="#!">二级菜单</a> </li>
+                    <li class="nav-item nav-item-has-subnav"> 
+                      <a href="#!">二级菜单</a>
+                      <ul class="nav nav-subnav">
+                        <li> <a href="#!">三级菜单</a> </li>
+                        <li> <a href="#!">三级菜单</a> </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li> <a href="#!">一级菜单</a> </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        
+        <div class="sidebar-footer">
+          <p class="copyright">Copyright &copy; 2019. <a target="_blank" href="http://lyear.itshubao.com">IT书包</a> All rights reserved.</p>
+        </div>
+      </div>
+      
+    </aside>
+    <!--End 左侧导航-->
+    
+    <!--头部信息-->
+    <header class="lyear-layout-header">
+      
+      <nav class="navbar">
+      
+        <div class="navbar-left">
+          <div class="lyear-aside-toggler">
+            <span class="lyear-toggler-bar"></span>
+            <span class="lyear-toggler-bar"></span>
+            <span class="lyear-toggler-bar"></span>
+          </div>
+        </div>
+        
+        <ul class="navbar-right d-flex align-items-center">
+          <li class="dropdown dropdown-notice">
+            <span data-toggle="dropdown" class="icon-item">
+              <i class="mdi mdi-bell-outline"></i>
+              <span class="badge badge-danger">10</span>
+            </span>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="lyear-notifications">
+                
+                <div class="lyear-notifications-title clearfix"  data-stopPropagation="true"><a href="#!" class="float-right">查看全部</a>你有 10 条未读消息</div>
+                <div class="lyear-notifications-info lyear-scroll">
+                  <a href="#!" class="dropdown-item" title="树莓派销量猛增，疫情期间居家工作学习、医疗领域都需要它">树莓派销量猛增，疫情期间居家工作学习、医疗领域都需要它</a>
+                  <a href="#!" class="dropdown-item" title="GNOME 用户体验团队将为 GNOME Shell 提供更多改进">GNOME 用户体验团队将为 GNOME Shell 提供更多改进</a>
+                  <a href="#!" class="dropdown-item" title="Linux On iPhone 即将面世，支持 iOS 的双启动">Linux On iPhone 即将面世，支持 iOS 的双启动</a>
+                  <a href="#!" class="dropdown-item" title="GitHub 私有仓库完全免费面向团队提供">GitHub 私有仓库完全免费面向团队提供</a>
+                  <a href="#!" class="dropdown-item" title="Wasmtime 为 WebAssembly 增加 Go 语言绑定">Wasmtime 为 WebAssembly 增加 Go 语言绑定</a>
+                  <a href="#!" class="dropdown-item" title="红帽借“订阅”成开源一哥，首创者 Cormier 升任总裁">红帽借“订阅”成开源一哥，首创者 Cormier 升任总裁</a>
+                  <a href="#!" class="dropdown-item" title="Zend 宣布推出两项 PHP 新产品">Zend 宣布推出两项 PHP 新产品</a>
+                </div>
+                
+              </div>
+            </div>
+          </li>
+          <!--切换主题配色-->
+		  <li class="dropdown dropdown-skin">
+		    <span data-toggle="dropdown" class="icon-item"><i class="mdi mdi-palette"></i></span>
+			<ul class="dropdown-menu dropdown-menu-right" data-stopPropagation="true">
+              <li class="drop-title"><p>主题</p></li>
+              <li class="drop-skin-li clearfix">
+                <span class="inverse">
+                  <input type="radio" name="site_theme" value="default" id="site_theme_1" checked>
+                  <label for="site_theme_1"></label>
+                </span>
+                <span>
+                  <input type="radio" name="site_theme" value="dark" id="site_theme_2">
+                  <label for="site_theme_2"></label>
+                </span>
+                <span>
+                  <input type="radio" name="site_theme" value="translucent" id="site_theme_3">
+                  <label for="site_theme_3"></label>
+                </span>
+              </li>
+			  <li class="drop-title"><p>LOGO</p></li>
+			  <li class="drop-skin-li clearfix">
+                <span class="inverse">
+                  <input type="radio" name="logo_bg" value="default" id="logo_bg_1" checked>
+                  <label for="logo_bg_1"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_2" id="logo_bg_2">
+                  <label for="logo_bg_2"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_3" id="logo_bg_3">
+                  <label for="logo_bg_3"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_4" id="logo_bg_4">
+                  <label for="logo_bg_4"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_5" id="logo_bg_5">
+                  <label for="logo_bg_5"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_6" id="logo_bg_6">
+                  <label for="logo_bg_6"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_7" id="logo_bg_7">
+                  <label for="logo_bg_7"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_8" id="logo_bg_8">
+                  <label for="logo_bg_8"></label>
+                </span>
+			  </li>
+			  <li class="drop-title"><p>头部</p></li>
+			  <li class="drop-skin-li clearfix">
+                <span class="inverse">
+                  <input type="radio" name="header_bg" value="default" id="header_bg_1" checked>
+                  <label for="header_bg_1"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_2" id="header_bg_2">
+                  <label for="header_bg_2"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_3" id="header_bg_3">
+                  <label for="header_bg_3"></label>
+                </span>
+                <span>
+                  <input type="radio" name="header_bg" value="color_4" id="header_bg_4">
+                  <label for="header_bg_4"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_5" id="header_bg_5">
+                  <label for="header_bg_5"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_6" id="header_bg_6">
+                  <label for="header_bg_6"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_7" id="header_bg_7">
+                  <label for="header_bg_7"></label>
+                </span>
+                <span>
+                  <input type="radio" name="header_bg" value="color_8" id="header_bg_8">
+                  <label for="header_bg_8"></label>
+                </span>
+				</li>
+			  <li class="drop-title"><p>侧边栏</p></li>
+			  <li class="drop-skin-li clearfix">
+                <span class="inverse">
+                  <input type="radio" name="sidebar_bg" value="default" id="sidebar_bg_1" checked>
+                  <label for="sidebar_bg_1"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_2" id="sidebar_bg_2">
+                  <label for="sidebar_bg_2"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_3" id="sidebar_bg_3">
+                  <label for="sidebar_bg_3"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_4" id="sidebar_bg_4">
+                  <label for="sidebar_bg_4"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_5" id="sidebar_bg_5">
+                  <label for="sidebar_bg_5"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_6" id="sidebar_bg_6">
+                  <label for="sidebar_bg_6"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_7" id="sidebar_bg_7">
+                  <label for="sidebar_bg_7"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_8" id="sidebar_bg_8">
+                  <label for="sidebar_bg_8"></label>
+                </span>
+			  </li>
+		    </ul>
+		  </li>
+          <!--切换主题配色-->
+          <li class="dropdown dropdown-profile">
+            <a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle">
+              <img class="img-avatar img-avatar-48 m-r-10" src="images/users/avatar.jpg" alt="笔下光年" />
+              <span>笔下光年</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li>
+                <a class="dropdown-item" href="lyear_pages_profile.html"><i class="mdi mdi-account"></i> 个人信息</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="lyear_pages_edit_pwd.html"><i class="mdi mdi-lock-outline"></i> 修改密码</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)"><i class="mdi mdi-delete"></i> 清空缓存</a>
+              </li>
+              <li class="dropdown-divider"></li>
+              <li>
+                <a class="dropdown-item" href="lyear_pages_login_1.html"><i class="mdi mdi-logout-variant"></i> 退出登录</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+      </nav>
+      
+    </header>
+    <!--End 头部信息-->
+    
+    <!--页面主要内容-->
+    <main class="lyear-layout-content">
+      
+      <div class="container-fluid p-t-15">
+        
+        <div class="row">
+          
+          <div class="col-lg-12">
+            <div class="card">
+              <header class="card-header"><div class="card-title">对话框</div></header>
+              <div class="card-body">
+                
+                <p>插件使用用jquery-confirm v3.3.4，文档地址：<a href="https://www.jquery-confirm.cn/" target="_blank">https://www.jquery-confirm.cn/</a></p>
+                <div class="row">
+                  <div class="col-md-3">
+                    <p>优雅的警报。</p>
+                    <button class="btn btn-primary btn-block example-p-1">提示</button>
+                  </div>
+                  <div class="col-md-3">
+                    <p>堆叠确认</p>
+                    <button class="btn btn-primary btn-block example-p-2">确认</button>
+                  </div>
+                  <div class="col-md-3">
+                    <p>成功，错误，警告</p>
+                    <button class="btn btn-primary btn-block example-p-70-type">Alert 类型</button>
+                  </div>
+                  <div class="col-md-3">
+                    <p>需要输入吗？</p>
+                    <button class="btn btn-primary btn-block example-p-7-1">提示</button>
+                  </div>
+                </div>
+                
+                <div class="row mt-3">
+                  <div class="col-md-3">
+                    <p>它也是一个对话框。</p>
+                    <button class="btn btn-primary btn-block example-p-4">对话框</button>
+                  </div>
+                  <div class="col-md-3">
+                    <p>不太重要的model</p>
+                    <button class="btn btn-primary btn-block example-p-3">背景消除</button>
+                  </div>
+                  <div class="col-md-3">
+                    <p>异部加载</p>
+                    <button class="btn btn-primary btn-block example-p-5">异部加载</button>
+                  </div>
+                  <div class="col-md-3">
+                    <p>一些动作可能很关键</p>
+                    <button class="btn btn-primary btn-block example-p-6">自动关闭</button>
+                  </div>
+                </div>
+                
+                <div class="row mt-3">
+                  <div class="col-md-3">
+                    <p>响应按键</p>
+                    <button class="btn btn-primary btn-block example-p-7">Keystrokes</button>
+                  </div>
+                  <div class="col-md-3">
+                    <p>自动居中</p>
+                    <button class="btn btn-primary btn-block example-pc-1">Alignment</button>
+                  </div>
+                  <div class="col-md-3">
+                    <p>正在载入图片</p>
+                    <button class="btn btn-primary btn-block example-pc-2">Images</button>
+                  </div>
+                  <div class="col-md-3">
+                    <p>干净的动画</p>
+                    <button class="btn btn-primary btn-block example-pc-3">Animations</button>
+                  </div>
+                </div>
+                
+                <div class="row mt-3">
+                  <div class="col-md-3">
+                    <p>可拖动的</p>
+                    <button class="btn btn-primary btn-block example-p-7-2">Draggable</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    
+    </main>
+    <!--End 页面主要内容-->
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/perfect-scrollbar.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="js/jquery-confirm/jquery-confirm.min.js"></script>
+<script type="text/javascript" src="js/main.min.js"></script>
+<script type="text/javascript">
+$('.example-p-1').on('click',
+function() {
+    $.alert({
+        title: '警告框',
+        content: '它一次可以顺利地做多次确认。<br>单击“确认”或“取消”以获取另一个模式',
+        icon: 'mdi mdi-rocket',
+        animation: 'scale',
+        closeAnimation: 'scale',
+        buttons: {
+            okay: {
+                text: '确认',
+                btnClass: 'btn-blue'
+            }
+        }
+    });
+});
+$('.example-p-2').on('click', function() {
+    $.confirm({
+        title: '安全的行动',
+        content: '笑江湖浪迹十年游，空负少年头。对铜驼巷陌，吟情渺渺，心事悠悠！酒冷诗残梦断，南国正清秋。',
+        icon: 'mdi mdi-comment-question',
+        animation: 'scale',
+        closeAnimation: 'scale',
+        opacity: 0.5,
+        buttons: {
+            'confirm': {
+                text: '继续',
+                btnClass: 'btn-blue',
+                action: function() {
+                    $.confirm({
+                        title: '这也许很关键',
+                        content: '关键行动可以有多个这样的确认。',
+                        icon: 'mdi mdi-alert',
+                        animation: 'scale',
+                        closeAnimation: 'zoom',
+                        buttons: {
+                            confirm: {
+                                text: '是的，当然！',
+                                btnClass: 'btn-orange',
+                                action: function() {
+                                    $.alert('一个非常关键的动作被 <strong>触发了!</strong>');
+                                }
+                            },
+                            '取消': function() {
+                                $.alert('您点击了 <strong>取消</strong>');
+                            }
+                        }
+                    });
+                }
+            },
+            '取消': function() {
+                $.alert('您点击了 <strong>取消</strong>');
+            },
+            moreButtons: {
+                text: '其他',
+                action: function() {
+                    $.alert('您点击了 <strong>其他</strong>');
+                }
+            },
+        }
+    });
+});
+// 该效果因为div元素有overflow-x:hidden，输入框获取焦点后阴影效果不好看，所以在form-group上增加p-1
+$('.example-p-7-1').on('click', function() {
+    $.confirm({
+        title: '简单的形式',
+        //content: 'url:form.html',  // 也可以采用url形式
+        content: '<div class="form-group p-1 mb-0">' + 
+                 '  <label class="control-label">您的名字</label>' +
+                 '  <input autofocus="" type="text" id="input-name" placeholder="请输入您的名字" class="form-control">' +
+                 '</div>',
+        buttons: {
+            sayMyName: {
+                text: '我的名字',
+                btnClass: 'btn-orange',
+                action: function() {
+                    var input = this.$content.find('input#input-name');
+                    var errorText = this.$content.find('.text-danger');
+                    if (!$.trim(input.val())) {
+                        $.alert({
+                            content: "name 字段不能为空。",
+                            type: 'red'
+                        });
+                        return false;
+                    } else {
+                        $.alert('您好！ ' + input.val() + ', 希望你今天过得愉快！');
+                    }
+                }
+            },
+            '稍等': function() {}
+        }
+    });
+});
+$('.example-p-70-type').on('click', function() {
+    $.alert({
+        title: '错误提示',
+        icon: 'mdi mdi-alert',
+        type: 'orange',
+        content: '有问题，请稍后再试。' + '<hr>' + '更多类型：red、green、orange、blue、purple、dark',
+    });
+});
+$('.example-p-3').on('click', function() {
+    $.alert({
+        title: '背景消除',
+        content: '单击模态框外部以将其关闭。',
+        animation: 'scale',
+        closeAnimation: 'bottom',
+        backgroundDismiss: true,
+        buttons: {
+            okay: {
+                text: '确认',
+                btnClass: 'btn-blue',
+                action: function() {}
+            }
+        }
+    });
+});
+$('.example-p-4').on('click', function() {
+    $.dialog({
+        title: '冰魄寒光剑',
+        content: '如果只需要一个没有按钮的弹出窗口, <strong>没问题！</strong><br>' + '<h4>禁用所有按钮</h4>' + '<h5>然后你得到一个对话模态框</h5>' + '<h6>如果这里没有按钮，关闭图标就会显示出来 (你需要一些东西来关闭模态框。)</h6>' + '<button type="button" class="btn btn-success">单击我更改内容</button>',
+        animation: 'scale',
+        onOpen: function() {
+            var that = this;
+            this.$content.find('button').click(function() {
+                that.setContent('就这么简单！');
+            })
+        }
+    });
+});
+$('.example-p-5').on('click', function() {
+    $.dialog({
+        title: '异步内容',
+        content: 'url:README.md',
+        animation: 'scale',
+        columnClass: 'large',
+        closeAnimation: 'scale',
+        backgroundDismiss: true,
+    });
+});
+$('.example-p-6').on('click', function() {
+    $.confirm({
+        title: '自动关闭',
+        content: '有些动作可能很关键，用自动关闭来防止。计时器用完后，此对话框将自动触发取消。',
+        autoClose: 'cancelAction|10000',
+        escapeKey: 'cancelAction',
+        buttons: {
+            confirm: {
+                btnClass: 'btn-red',
+                text: '删除 Ben 的帐户',
+                action: function() {
+                    $.alert('你删除了 Ben 的帐户！');
+                }
+            },
+            cancelAction: {
+                text: '取消',
+                action: function() {
+                    $.alert('Ben 刚刚得救了！');
+                }
+            }
+        }
+    });
+});
+$('.example-p-7').on('click', function() {
+    $.confirm({
+        title: '按键',
+        escapeKey: true,
+        content: '按 退出键 关闭模态框。按 回车键 触发正常。按 shift或ctrl键 触发取消。',
+        backgroundDismiss: true,
+        buttons: {
+            okay: {
+                text: '确认',
+                keys: ['enter'],
+                action: function() {
+                    $.alert('<strong>确认按钮</strong> 被触发。');
+                }
+            },
+            cancel: {
+                text: '取消',
+                keys: ['ctrl', 'shift'],
+                action: function() {
+                    $.alert('<strong>取消按钮</strong> 被触发。');
+                }
+            }
+        },
+    });
+});
+$('.example-pc-1').on('click', function() {
+    $.confirm({
+        title: '优雅地居中对齐',
+        content: '<p>您可以添加内容，而不必担心对齐问题。我们的目标是制作一个交互式对话。</p>' + '<button type="button" class="btn btn-success">点击我增加更多内容</button><div id="contentArea"></div> ',
+        buttons: {
+            someButton: {
+                text: '增加内容',
+                btnClass: 'btn-green',
+                action: function() {
+                    this.$content.find('#contentArea').append('<br>难消受灯昏罗帐，怅昙花一现恨难休！飘零惯，金戈铁马，拼葬荒丘！');
+                    return false;
+                }
+            },
+            someOtherButton: {
+                text: '清除内容',
+                btnClass: 'btn-orange',
+                action: function() {
+                    this.$content.find('#contentArea').html('');
+                    return false;
+                }
+            },
+            '关闭': function() {}
+        },
+        onOpen: function() {
+            var that = this;
+            this.$content.find('button').click(function() {
+                that.$content.find('#contentArea').append('<br>这太棒了！！！！');
+            });
+        },
+    });
+});
+$('.example-pc-2').on('click', function() {
+    $.confirm({
+        title: '添加图片',
+        content: '<p>葫芦娃</p>' + '<img src="images/users/avatar-1.png">',
+        animation: 'scale',
+        animationClose: 'top',
+        buttons: {
+            confirm: {
+                text: '添加更多',
+                btnClass: 'btn-blue',
+                action: function() {
+                    this.$content.append('<img src="images/users/avatar-2.png">');
+                    return false;
+                }
+            },
+            '取消': function() {}
+        },
+    });
+});
+$(' .example-pc-3').on('click', function() {
+    $.alert({
+        title: '动画',
+        content: 'jquery confirm提供了许多开箱即用的打开和关闭动画。<br>最棒的是，你也可以添加自定义的。',
+        animation: 'scale',
+        closeAnimation: 'right',
+        buttons: {
+            '放大': function() {
+                this.setCloseAnimation('zoom');
+            },
+            '旋转': function() {
+                this.setCloseAnimation('rotate');
+            },
+            '缩小': function() {
+                this.setCloseAnimation('scale');
+            },
+            '向上': function() {
+                this.setCloseAnimation('top');
+            }
+        },
+        backgroundDismiss: function() {
+            return false;
+        },
+    });
+});
+$('.example-p-7-2').on('click', function() {
+    $.alert({
+        title: '可拖动的对话',
+        content: '此对话框是可拖动的，请使用标题将其拖动。它不会触碰屏幕边框。',
+        type: 'blue',
+        animation: 'scale',
+        draggable: true,
+    });
+})
+</script>
+</body>
+</html>

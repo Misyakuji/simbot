@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta name="keywords" content="LightYear,LightYearAdmin,光年,后台模板,后台管理系统,光年HTML模板">
+<meta name="description" content="Light Year Admin V4是一个基于Bootstrap v4.4.1的后台管理系统的HTML模板。">
+<meta name="author" content="yinq">
+<title>滚动监听 - 光年(Light Year Admin V4)后台管理系统模板</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+
+<body>
+<!--页面loading-->
+<div id="lyear-preloader" class="loading">
+  <div class="ctn-preloader">
+    <div class="round_spinner">
+      <div class="spinner"></div>
+      <img src="images/loading-logo.png" alt="">
+    </div>
+  </div>
+</div>
+<!--页面loading end-->
+<div class="lyear-layout-web">
+  <div class="lyear-layout-container">
+    <!--左侧导航-->
+    <aside class="lyear-layout-sidebar">
+      
+      <!-- logo -->
+      <div id="logo" class="sidebar-header">
+        <a href="index.html"><img src="images/logo-sidebar.png" title="LightYear" alt="LightYear" /></a>
+      </div>
+      <div class="lyear-layout-sidebar-info lyear-scroll"> 
+        
+        <nav class="sidebar-main">
+          <ul class="nav-drawer">
+            <li class="nav-item"> <a href="index.html"><i class="mdi mdi-home"></i> <span>后台首页</span></a> </li>
+            <li class="nav-item nav-item-has-subnav active open">
+              <a href="javascript:void(0)"><i class="mdi mdi-palette"></i> <span>UI 元素</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_ui_typography.html">排版</a> </li>
+                <li> <a href="lyear_ui_grid.html">栅格</a> </li>
+                <li> <a href="lyear_ui_icon.html">图标</a> </li>
+                <li> <a href="lyear_ui_alerts.html">警告框</a> </li>
+                <li> <a href="lyear_ui_buttons.html">按钮</a> </li>
+                <li> <a href="lyear_ui_button_group.html">按钮组</a> </li>
+                <li> <a href="lyear_ui_cards.html">卡片</a> </li>
+                <li> <a href="lyear_ui_tables.html">表格</a> </li>
+                <li> <a href="lyear_ui_modal.html">模态框</a> </li>
+                <li> <a href="lyear_ui_dropdown.html">下拉菜单</a> </li>
+                <li> <a href="lyear_ui_tooltips.html">工具提示</a> </li>
+                <li> <a href="lyear_ui_tabs.html">标签页</a> </li>
+                <li> <a href="lyear_ui_pagination.html">分页</a> </li>
+                <li> <a href="lyear_ui_popovers.html">POP提示</a> </li>
+                <li> <a href="lyear_ui_images.html">图片</a> </li>
+                <li> <a href="lyear_ui_badges.html">徽章</a> </li>
+                <li> <a href="lyear_ui_progress.html">进度条</a> </li>
+                <li> <a href="lyear_ui_list_group.html">列表组</a> </li>
+                <li> <a href="lyear_ui_media_object.html">媒体对象</a> </li>
+                <li> <a href="lyear_ui_navbar.html">导航栏</a> </li>
+                <li class="active"> <a href="lyear_ui_scrollspy.html">滚动监听</a> </li>
+                <li> <a href="lyear_ui_spinners.html">加载状态</a> </li>
+                <li> <a href="lyear_ui_toasts.html">消息弹窗</a> </li>
+                <li> <a href="lyear_ui_timeline.html">时光轴</a> </li>
+                <li> <a href="lyear_ui_other.html">其他</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-format-align-justify"></i> <span>表单</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_forms_elements.html">基本元素</a> </li>
+                <li> <a href="lyear_forms_input_group.html">输入框组</a> </li>
+                <li> <a href="lyear_forms_radio.html">单选框</a> </li>
+                <li> <a href="lyear_forms_checkbox.html">复选框</a> </li>
+                <li> <a href="lyear_forms_switches.html">开关</a> </li>
+                <li> <a href="lyear_forms_range.html">范围选择</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-tools"></i> <span>工具类</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_utilities_borders.html">边框</a> </li>
+                <li> <a href="lyear_utilities_colors.html">颜色</a> </li>
+                <li> <a href="lyear_utilities_display.html">显示属性</a> </li>
+                <li> <a href="lyear_utilities_flex.html">弹性布局</a> </li>
+                <li> <a href="lyear_utilities_float.html">浮动</a> </li>
+                <li> <a href="lyear_utilities_sizing.html">尺寸</a> </li>
+                <li> <a href="lyear_utilities_spacing.html">间隔</a> </li>
+                <li> <a href="lyear_utilities_stretched_link.html">延伸链接</a> </li>
+                <li> <a href="lyear_utilities_text.html">文本</a> </li>
+                <li> <a href="lyear_utilities_other.html">其他</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-file-outline"></i> <span>示例页面</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_pages_doc.html">文档列表</a> </li>
+                <li> <a href="lyear_pages_gallery.html">图库列表</a> </li>
+                <li> <a href="lyear_pages_config.html">网站配置</a> </li>
+                <li> <a href="lyear_pages_rabc.html">设置权限</a> </li>
+                <li> <a href="lyear_pages_add_doc.html">新增文档</a> </li>
+                <li> <a href="lyear_pages_guide.html">表单向导</a> </li>
+                <li> <a href="lyear_pages_data_table.html">表格插件</a> </li>
+                <li> <a href="lyear_pages_login_1.html" target="_blank">登录页面1</a> </li>
+                <li> <a href="lyear_pages_login_2.html" target="_blank">登录页面2</a> </li>
+                <li> <a href="lyear_pages_login_3.html" target="_blank">登录页面3</a> </li>
+                <li> <a href="lyear_pages_login_4.html" target="_blank">登录页面4</a> </li>
+                <li> <a href="lyear_pages_error.html" target="_blank">错误页面</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-language-javascript"></i> <span>JS 插件</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="lyear_js_datepicker.html">日期选取器</a> </li>
+                <li> <a href="lyear_js_colorpicker.html">选色器</a> </li>
+                <li> <a href="lyear_js_chartjs.html">Chart.js</a> </li>
+                <li> <a href="lyear_js_jconfirm.html">对话框</a> </li>
+                <li> <a href="lyear_js_tags_input.html">标签插件</a> </li>
+                <li> <a href="lyear_js_notify.html">通知消息</a> </li>
+                <li> <a href="lyear_js_maxlength.html">长度判断</a> </li>
+                <li> <a href="lyear_js_select.html">下拉选择</a> </li>
+                <li> <a href="lyear_js_fullcalendar.html">日程插件</a> </li>
+                <li> <a href="lyear_js_loading.html">loading插件</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-has-subnav">
+              <a href="javascript:void(0)"><i class="mdi mdi-menu"></i> <span>多级菜单</span></a>
+              <ul class="nav nav-subnav">
+                <li> <a href="#!">一级菜单</a> </li>
+                <li class="nav-item nav-item-has-subnav"> 
+                  <a href="#!">一级菜单</a>
+                  <ul class="nav nav-subnav">
+                    <li> <a href="#!">二级菜单</a> </li>
+                    <li class="nav-item nav-item-has-subnav"> 
+                      <a href="#!">二级菜单</a>
+                      <ul class="nav nav-subnav">
+                        <li> <a href="#!">三级菜单</a> </li>
+                        <li> <a href="#!">三级菜单</a> </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li> <a href="#!">一级菜单</a> </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        
+        <div class="sidebar-footer">
+          <p class="copyright">Copyright &copy; 2019. <a target="_blank" href="http://lyear.itshubao.com">IT书包</a> All rights reserved.</p>
+        </div>
+      </div>
+      
+    </aside>
+    <!--End 左侧导航-->
+    
+    <!--头部信息-->
+    <header class="lyear-layout-header">
+      
+      <nav class="navbar">
+      
+        <div class="navbar-left">
+          <div class="lyear-aside-toggler">
+            <span class="lyear-toggler-bar"></span>
+            <span class="lyear-toggler-bar"></span>
+            <span class="lyear-toggler-bar"></span>
+          </div>
+        </div>
+        
+        <ul class="navbar-right d-flex align-items-center">
+          <li class="dropdown dropdown-notice">
+            <span data-toggle="dropdown" class="icon-item">
+              <i class="mdi mdi-bell-outline"></i>
+              <span class="badge badge-danger">10</span>
+            </span>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="lyear-notifications">
+                
+                <div class="lyear-notifications-title clearfix"  data-stopPropagation="true"><a href="#!" class="float-right">查看全部</a>你有 10 条未读消息</div>
+                <div class="lyear-notifications-info lyear-scroll">
+                  <a href="#!" class="dropdown-item" title="树莓派销量猛增，疫情期间居家工作学习、医疗领域都需要它">树莓派销量猛增，疫情期间居家工作学习、医疗领域都需要它</a>
+                  <a href="#!" class="dropdown-item" title="GNOME 用户体验团队将为 GNOME Shell 提供更多改进">GNOME 用户体验团队将为 GNOME Shell 提供更多改进</a>
+                  <a href="#!" class="dropdown-item" title="Linux On iPhone 即将面世，支持 iOS 的双启动">Linux On iPhone 即将面世，支持 iOS 的双启动</a>
+                  <a href="#!" class="dropdown-item" title="GitHub 私有仓库完全免费面向团队提供">GitHub 私有仓库完全免费面向团队提供</a>
+                  <a href="#!" class="dropdown-item" title="Wasmtime 为 WebAssembly 增加 Go 语言绑定">Wasmtime 为 WebAssembly 增加 Go 语言绑定</a>
+                  <a href="#!" class="dropdown-item" title="红帽借“订阅”成开源一哥，首创者 Cormier 升任总裁">红帽借“订阅”成开源一哥，首创者 Cormier 升任总裁</a>
+                  <a href="#!" class="dropdown-item" title="Zend 宣布推出两项 PHP 新产品">Zend 宣布推出两项 PHP 新产品</a>
+                </div>
+                
+              </div>
+            </div>
+          </li>
+          <!--切换主题配色-->
+		  <li class="dropdown dropdown-skin">
+		    <span data-toggle="dropdown" class="icon-item"><i class="mdi mdi-palette"></i></span>
+			<ul class="dropdown-menu dropdown-menu-right" data-stopPropagation="true">
+              <li class="drop-title"><p>主题</p></li>
+              <li class="drop-skin-li clearfix">
+                <span class="inverse">
+                  <input type="radio" name="site_theme" value="default" id="site_theme_1" checked>
+                  <label for="site_theme_1"></label>
+                </span>
+                <span>
+                  <input type="radio" name="site_theme" value="dark" id="site_theme_2">
+                  <label for="site_theme_2"></label>
+                </span>
+                <span>
+                  <input type="radio" name="site_theme" value="translucent" id="site_theme_3">
+                  <label for="site_theme_3"></label>
+                </span>
+              </li>
+			  <li class="drop-title"><p>LOGO</p></li>
+			  <li class="drop-skin-li clearfix">
+                <span class="inverse">
+                  <input type="radio" name="logo_bg" value="default" id="logo_bg_1" checked>
+                  <label for="logo_bg_1"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_2" id="logo_bg_2">
+                  <label for="logo_bg_2"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_3" id="logo_bg_3">
+                  <label for="logo_bg_3"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_4" id="logo_bg_4">
+                  <label for="logo_bg_4"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_5" id="logo_bg_5">
+                  <label for="logo_bg_5"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_6" id="logo_bg_6">
+                  <label for="logo_bg_6"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_7" id="logo_bg_7">
+                  <label for="logo_bg_7"></label>
+                </span>
+                <span>
+                  <input type="radio" name="logo_bg" value="color_8" id="logo_bg_8">
+                  <label for="logo_bg_8"></label>
+                </span>
+			  </li>
+			  <li class="drop-title"><p>头部</p></li>
+			  <li class="drop-skin-li clearfix">
+                <span class="inverse">
+                  <input type="radio" name="header_bg" value="default" id="header_bg_1" checked>
+                  <label for="header_bg_1"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_2" id="header_bg_2">
+                  <label for="header_bg_2"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_3" id="header_bg_3">
+                  <label for="header_bg_3"></label>
+                </span>
+                <span>
+                  <input type="radio" name="header_bg" value="color_4" id="header_bg_4">
+                  <label for="header_bg_4"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_5" id="header_bg_5">
+                  <label for="header_bg_5"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_6" id="header_bg_6">
+                  <label for="header_bg_6"></label>                      
+                </span>                                                    
+                <span>                                                     
+                  <input type="radio" name="header_bg" value="color_7" id="header_bg_7">
+                  <label for="header_bg_7"></label>
+                </span>
+                <span>
+                  <input type="radio" name="header_bg" value="color_8" id="header_bg_8">
+                  <label for="header_bg_8"></label>
+                </span>
+				</li>
+			  <li class="drop-title"><p>侧边栏</p></li>
+			  <li class="drop-skin-li clearfix">
+                <span class="inverse">
+                  <input type="radio" name="sidebar_bg" value="default" id="sidebar_bg_1" checked>
+                  <label for="sidebar_bg_1"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_2" id="sidebar_bg_2">
+                  <label for="sidebar_bg_2"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_3" id="sidebar_bg_3">
+                  <label for="sidebar_bg_3"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_4" id="sidebar_bg_4">
+                  <label for="sidebar_bg_4"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_5" id="sidebar_bg_5">
+                  <label for="sidebar_bg_5"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_6" id="sidebar_bg_6">
+                  <label for="sidebar_bg_6"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_7" id="sidebar_bg_7">
+                  <label for="sidebar_bg_7"></label>
+                </span>
+                <span>
+                  <input type="radio" name="sidebar_bg" value="color_8" id="sidebar_bg_8">
+                  <label for="sidebar_bg_8"></label>
+                </span>
+			  </li>
+		    </ul>
+		  </li>
+          <!--切换主题配色-->
+          <li class="dropdown dropdown-profile">
+            <a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle">
+              <img class="img-avatar img-avatar-48 m-r-10" src="images/users/avatar.jpg" alt="笔下光年" />
+              <span>笔下光年</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li>
+                <a class="dropdown-item" href="lyear_pages_profile.html"><i class="mdi mdi-account"></i> 个人信息</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="lyear_pages_edit_pwd.html"><i class="mdi mdi-lock-outline"></i> 修改密码</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)"><i class="mdi mdi-delete"></i> 清空缓存</a>
+              </li>
+              <li class="dropdown-divider"></li>
+              <li>
+                <a class="dropdown-item" href="lyear_pages_login_1.html"><i class="mdi mdi-logout-variant"></i> 退出登录</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+      </nav>
+      
+    </header>
+    <!--End 头部信息-->
+    
+    <!--页面主要内容-->
+    <main class="lyear-layout-content">
+      
+      <div class="container-fluid p-t-15">
+        
+        <div class="row">
+          
+          <div class="col-lg-12">
+            <div class="card">
+              <header class="card-header"><div class="card-title">滚动监听</div></header>
+              <div class="card-body">
+                
+                <nav id="navbar-example2" class="navbar navbar-light bg-light">
+                  <a class="navbar-brand" href="#!">导航栏</a>
+                  <ul class="nav nav-pills">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#fat">@牡丹亭</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#mdo">@西厢记</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">四大名著</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#one">水浒传</a>
+                        <a class="dropdown-item" href="#two">红楼梦</a>
+                        <div role="separator" class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#three">西游记</a>
+                        <a class="dropdown-item" href="#four">三国演义</a>
+                      </div>
+                    </li>
+                  </ul>
+                </nav>
+                <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">
+                  <h4 id="fat">@牡丹亭</h4>
+                  <p>《牡丹亭》，是明朝剧作家汤显祖的代表作之一，也是他一生最得意之作，他曾言“吾一生四梦，得意处唯在《牡丹》。”创作于1598年。全名《牡丹亭还魂记》，即《还魂记》，也称《还魂梦》或《牡丹亭梦》，传奇剧本，二卷，五十五出，据明人小说《杜丽娘慕色还魂》而成，明代南曲代表作。共55出，描写杜丽娘和柳梦梅的爱情故事。它与汤显祖的另外三部作品并称为“临川四梦”。</p>
+                  <p>《牡丹亭》与《紫钗记》、《邯郸记》和《南柯记》合称“玉茗堂四梦”，也叫“临川四梦”。受到了儒、释、道三家学说的不同影响，其故事背景就描写的是腐朽的儒家封建体系，故事中出现的花神却是道家的产物，而女主角杜丽娘身死又还魂乃是佛家的三生说。总之，汤显祖在这部《牡丹亭》中倾注了自己毕生的思想感情，完美的诠释了他的“至情说”。</p>
+                  <h4 id="mdo">@西厢记</h4>
+                  <p>《西厢记》全名《崔莺莺待月西厢记》。共5本21折5楔子。作者王实甫，名德信，元代著名杂剧作家，河北省保定市定兴（今定兴县）人。他一生写作了14部剧本，著有杂剧十四种，现存《西厢记》、《丽春堂》、《破窑记》三种。《破窑记》写刘月娥和吕蒙正悲欢离合的故事，有人怀疑不是王实甫的手笔。另有《贩茶船》、《芙蓉亭》二种，各传有曲文一折。《西厢记》大约写于元贞、大德年间是他的代表作。这个剧一上舞台就惊倒四座，博得男女青年的喜爱，被誉为“西厢记天下夺魁”。历史上，“愿普天下有情人都成眷属”这一美好的愿望，不知成为多少文学作品的主题，《西厢记》便是描绘这一主题的最成功的戏剧。</p>
+                  <h4 id="one">水浒传</h4>
+                  <p>《水浒传》，是中国四大名著之一，全书描写北宋末年以宋江为首的108位好汉在梁山聚义，以及聚义之后接受招安、四处征战的故事。《水浒传》也是汉语文学中最具备史诗特征的作品之一。是中国历史上最早用白话文写成的章回小说之一。版本众多，流传极广，脍炙人口，对中国乃至东亚的叙事文学都有极其深远的影响。</p>
+                  <p>《水浒传》是一部以描写古代农民起义为题材的长篇小说。它形象地描绘了农民起义从发生、发展直至失败的全过程，深刻揭示了起义的社会根源，满腔热情地歌颂了起义英雄的反抗斗争和他们的社会理想，也具体揭示了起义失败的内在历史原因。</p>
+                  <h4 id="two">红楼梦</h4>
+                  <p>《红楼梦》，中国古典四大名著之首，清代作家曹雪芹创作的章回体长篇小说，又名《石头记》《金玉缘》。此书分为120回“程本”和80回“脂本”两种版本系统。新版通行本前80回据脂本汇校，后40回据程本汇校，署名“曹雪芹著，无名氏续，程伟元、高鹗整理”。后40回作者尚有争议，但是对于矮化甚至腰斩后40回的极端倾向也应保持警惕。</p>
+                  <p>《红楼梦》是一部具有世界影响力的人情小说作品，举世公认的中国古典小说巅峰之作，中国封建社会的百科全书，传统文化的集大成者。小说以贾、史、王、薛四大家族的兴衰为背景，以贾府的家庭琐事、闺阁闲情为脉络，以贾宝玉、林黛玉、薛宝钗的爱情婚姻故事为主线，刻画了以贾宝玉和金陵十二钗为中心的正邪两赋有情人的人性美和悲剧美。通过家族悲剧、女儿悲剧及主人公的人生悲剧，揭示出封建末世危机 。</p>
+                  <p>《红楼梦》的作者具有初步的民主主义思想，他对现实社会包括宫廷及官场的黑暗、封建贵族阶级及其家庭的腐朽，封建的科举制度、婚姻制度、奴婢制度、等级制度，以及与此相适应的社会统治思想即孔孟之道和程朱理学、社会道德观念等，都进行了深刻的批判，并提出了朦胧的带有初步民主主义性质的理想和主张。《红楼梦》以“大旨谈情，实录其事”自勉，只按自己的事体情理，按迹循踪，摆脱旧套，新鲜别致，取得了非凡的艺术成就。“真事隐去，假语村言”的特殊笔法更是令后世读者脑洞大开，揣测之说久而遂多。围绕《红楼梦》的品读研究形成了一门显学——红学。</p>
+                  <h4 id="three">西游记</h4>
+                  <p>《西游记》为明代小说家吴承恩所著。取材于《大唐西域记》和民间传说、元杂剧。宋代《大唐三藏取经诗话》（本名《大唐三藏取经记》）是西游记故事见于说话文字的最早雏形，其中，唐僧就是以玄奘法师为原型的。</p>
+                  <p>作为中国古代第一部浪漫主义长篇神魔小说，该书深刻地描绘了当时的社会现实，是魔幻现实主义的开创作品。先写了孙悟空出世，然后遇见了唐僧、猪八戒和沙和尚三人，但还是主要描写了孙悟空、猪八戒、沙和尚三人保护唐僧西行取经，唐僧从投胎到取经受了九九八十一难，一路降妖伏魔，九九归一，终于到达西天见到如来佛祖，最终五圣成真。</p>
+                  <p>自《西游记》问世以来在民间广为流传，各式各样的版本层出不穷，明代刊本有六种，清代刊本、抄本也有七种，典籍所记已佚版本十三种。鸦片战争以后，中国古典文学作品大量被译为西文，西渐欧美，已有英、法、德、意、西、手语、世（世界语）、俄、捷、罗、波、日、朝、越等文种。并发表了不少研究论文和专著，对这部小说作出了极高的评价。被尊为中国古典四大名著之一。</p>
+                  <h4 id="four">三国演义</h4>
+                  <p>《三国演义》是中国古典四大名著之一，是中国第一部长篇章回体历史演义小说，全名为《三国志通俗演义》（又称《三国志演义》），作者是元末明初的著名小说家罗贯中。</p>
+                  <p>《三国演义》描写了从东汉末年到西晋初年之间近105年的历史风云，以描写战争为主，反映了东汉末年的群雄割据混战和汉、魏、吴三国之间的政治和军事斗争和最终司马炎一统三国，建立晋朝的故事。反映了三国时代各类社会斗争与矛盾的转化，并概括了这一时代的历史巨变，塑造了一批叱咤风云的三国英雄人物。全书可大致分为黄巾之乱、董卓之乱、群雄逐鹿、三国鼎立、三国归晋五大部分。在广阔的背景上，上演了一幕幕气势磅礴的战争场面。编者罗贯中将兵法三十六计融于字里行间，既有情节，也有兵法韬略。</p>
+                </div>
+                
+                <h6 class="mt-3">嵌套的导航示例</h6>
+                <div class="row">
+                  <div class="col-4">
+                    <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column">
+                      <a class="navbar-brand" href="#!">导航栏</a>
+                      <nav class="nav nav-pills flex-column">
+                        <a class="nav-link active" href="#item-1">模板语法</a>
+                        <nav class="nav nav-pills flex-column">
+                          <a class="nav-link ml-3 my-1 active" href="#item-1-1">插值</a>
+                          <a class="nav-link ml-3 my-1" href="#item-1-2">指令</a>
+                        </nav>
+                        <a class="nav-link" href="#item-2">计算属性和侦听器</a>
+                        <a class="nav-link" href="#item-3">Class 与 Style 绑定</a>
+                        <nav class="nav nav-pills flex-column">
+                          <a class="nav-link ml-3 my-1" href="#item-3-1">绑定 HTML Class</a>
+                          <a class="nav-link ml-3 my-1" href="#item-3-2">绑定内联样式</a>
+                        </nav>
+                      </nav>
+                    </nav>
+                  </div>
+                  <div class="col-8">
+                    <div data-spy="scroll" data-target="#navbar-example3" data-offset="0" class="scrollspy-example-2">
+                      <h4 id="item-1">模板语法</h4>
+                      <p>Vue.js 使用了基于 HTML 的模板语法，允许开发者声明式地将 DOM 绑定至底层 Vue 实例的数据。所有 Vue.js 的模板都是合法的 HTML，所以能被遵循规范的浏览器和 HTML 解析器解析。</p>
+                      <p>在底层的实现上，Vue 将模板编译成虚拟 DOM 渲染函数。结合响应系统，Vue 能够智能地计算出最少需要重新渲染多少组件，并把 DOM 操作次数减到最少。</p>
+                      <h5 id="item-1-1">插值</h5>
+                      <p>数据绑定最常见的形式就是使用“Mustache”语法 (双大括号) 的文本插值：</p>
+                      <pre>&lt;span&gt;Message: {{ msg }}&lt;/span&gt;</pre>
+                      <p>Mustache 标签将会被替代为对应数据对象上 <code>msg</code> property 的值。无论何时，绑定的数据对象上 <code>msg</code> property 发生了改变，插值处的内容都会更新。</p>
+                      <h5 id="item-1-2">指令</h5>
+                      <p>指令 (Directives) 是带有 <code>v-</code> 前缀的特殊 attribute。指令 attribute 的值预期是单个 JavaScript 表达式 (<code>v-for</code> 是例外情况，稍后我们再讨论)。指令的职责是，当表达式的值改变时，将其产生的连带影响，响应式地作用于 DOM。回顾我们在介绍中看到的例子：</p>
+                      <h4 id="item-2">计算属性和侦听器</h4>
+                      <p>模板内的表达式非常便利，但是设计它们的初衷是用于简单运算的。在模板中放入太多的逻辑会让模板过重且难以维护。例如：</p>
+                      <pre>&lt;div id="example"&gt;
+  {{ message.split('').reverse().join('') }}
+&lt;/div&gt;</pre>
+                      <p>在这个地方，模板不再是简单的声明式逻辑。你必须看一段时间才能意识到，这里是想要显示变量 <code>message</code> 的翻转字符串。当你想要在模板中多包含此处的翻转字符串时，就会更加难以处理。</p>
+                      <h4 id="item-3">Class 与 Style 绑定</h4>
+                      <p>操作元素的 <code>class</code> 列表和内联样式是数据绑定的一个常见需求。因为它们都是 <code>attribute</code>，所以我们可以用 <code>v-bind</code> 处理它们：只需要通过表达式计算出字符串结果即可。不过，字符串拼接麻烦且易错。因此，在将 <code>v-bind</code> 用于 <code>class</code> 和 <code>style</code> 时，Vue.js 做了专门的增强。表达式结果的类型除了字符串之外，还可以是对象或数组。</p>
+                      <h5 id="item-3-1">绑定 HTML Class</h5>
+                      <p>我们可以传给 <code>v-bind:class</code> 一个对象，以动态地切换 class：</p>
+                      <pre>&lt;div v-bind:class="{ active: isActive }"&gt;&lt;/div&gt;</pre>
+                      <p>上面的语法表示 <code>active</code> 这个 class 存在与否将取决于数据 property isActive 的 truthiness。</p>
+                      <p>你可以在对象中传入更多字段来动态切换多个 class。此外，v-bind:class 指令也可以与普通的 class attribute 共存。当有如下模板：</p>
+                      <pre>&lt;div
+  class="static"
+  v-bind:class="{ active: isActive, 'text-danger': hasError }"
+&gt;&lt;/div&gt;</pre>
+                      和如下 data：
+                      <pre>data: {
+  isActive: true,
+  hasError: false
+}</pre>
+                      结果渲染为：
+                      <pre>&lt;div class="static active"&gt;&lt;/div&gt;</pre>
+                      <h5 id="item-3-2">绑定内联样式</h5>
+                      <p><code>v-bind:style</code> 的对象语法十分直观——看着非常像 CSS，但其实是一个 JavaScript 对象。CSS property 名可以用驼峰式 (camelCase) 或短横线分隔 (kebab-case，记得用引号括起来) 来命名：</p>
+                    </div>
+                  </div>
+                </div>
+                <h6 class="mt-3">列表组的示例</h6>
+                <div class="row">
+                  <div class="col-4">
+                    <div id="list-example" class="list-group">
+                      <a class="list-group-item list-group-item-action active" href="#list-item-1">水浒传</a>
+                      <a class="list-group-item list-group-item-action" href="#list-item-2">红楼梦</a>
+                      <a class="list-group-item list-group-item-action" href="#list-item-3">西游记</a>
+                      <a class="list-group-item list-group-item-action" href="#list-item-4">三国演义</a>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+                      <h4 id="list-item-1">水浒传</h4>
+                      <p>《水浒传》，是中国四大名著之一，全书描写北宋末年以宋江为首的108位好汉在梁山聚义，以及聚义之后接受招安、四处征战的故事。《水浒传》也是汉语文学中最具备史诗特征的作品之一。是中国历史上最早用白话文写成的章回小说之一。版本众多，流传极广，脍炙人口，对中国乃至东亚的叙事文学都有极其深远的影响。</p>
+                      <p>《水浒传》是一部以描写古代农民起义为题材的长篇小说。它形象地描绘了农民起义从发生、发展直至失败的全过程，深刻揭示了起义的社会根源，满腔热情地歌颂了起义英雄的反抗斗争和他们的社会理想，也具体揭示了起义失败的内在历史原因。</p>
+                      <h4 id="list-item-2">红楼梦</h4>
+                      <p>《红楼梦》，中国古典四大名著之首，清代作家曹雪芹创作的章回体长篇小说，又名《石头记》《金玉缘》。此书分为120回“程本”和80回“脂本”两种版本系统。新版通行本前80回据脂本汇校，后40回据程本汇校，署名“曹雪芹著，无名氏续，程伟元、高鹗整理”。后40回作者尚有争议，但是对于矮化甚至腰斩后40回的极端倾向也应保持警惕。</p>
+                      <p>《红楼梦》是一部具有世界影响力的人情小说作品，举世公认的中国古典小说巅峰之作，中国封建社会的百科全书，传统文化的集大成者。小说以贾、史、王、薛四大家族的兴衰为背景，以贾府的家庭琐事、闺阁闲情为脉络，以贾宝玉、林黛玉、薛宝钗的爱情婚姻故事为主线，刻画了以贾宝玉和金陵十二钗为中心的正邪两赋有情人的人性美和悲剧美。通过家族悲剧、女儿悲剧及主人公的人生悲剧，揭示出封建末世危机 。</p>
+                      <p>《红楼梦》的作者具有初步的民主主义思想，他对现实社会包括宫廷及官场的黑暗、封建贵族阶级及其家庭的腐朽，封建的科举制度、婚姻制度、奴婢制度、等级制度，以及与此相适应的社会统治思想即孔孟之道和程朱理学、社会道德观念等，都进行了深刻的批判，并提出了朦胧的带有初步民主主义性质的理想和主张。《红楼梦》以“大旨谈情，实录其事”自勉，只按自己的事体情理，按迹循踪，摆脱旧套，新鲜别致，取得了非凡的艺术成就。“真事隐去，假语村言”的特殊笔法更是令后世读者脑洞大开，揣测之说久而遂多。围绕《红楼梦》的品读研究形成了一门显学——红学。</p>
+                      <h4 id="list-item-3">西游记</h4>
+                      <p>《西游记》为明代小说家吴承恩所著。取材于《大唐西域记》和民间传说、元杂剧。宋代《大唐三藏取经诗话》（本名《大唐三藏取经记》）是西游记故事见于说话文字的最早雏形，其中，唐僧就是以玄奘法师为原型的。</p>
+                      <p>作为中国古代第一部浪漫主义长篇神魔小说，该书深刻地描绘了当时的社会现实，是魔幻现实主义的开创作品。先写了孙悟空出世，然后遇见了唐僧、猪八戒和沙和尚三人，但还是主要描写了孙悟空、猪八戒、沙和尚三人保护唐僧西行取经，唐僧从投胎到取经受了九九八十一难，一路降妖伏魔，九九归一，终于到达西天见到如来佛祖，最终五圣成真。</p>
+                      <p>自《西游记》问世以来在民间广为流传，各式各样的版本层出不穷，明代刊本有六种，清代刊本、抄本也有七种，典籍所记已佚版本十三种。鸦片战争以后，中国古典文学作品大量被译为西文，西渐欧美，已有英、法、德、意、西、手语、世（世界语）、俄、捷、罗、波、日、朝、越等文种。并发表了不少研究论文和专著，对这部小说作出了极高的评价。被尊为中国古典四大名著之一。</p>
+                      <h4 id="list-item-4">三国演义</h4>
+                      <p>《三国演义》是中国古典四大名著之一，是中国第一部长篇章回体历史演义小说，全名为《三国志通俗演义》（又称《三国志演义》），作者是元末明初的著名小说家罗贯中。</p>
+                      <p>《三国演义》描写了从东汉末年到西晋初年之间近105年的历史风云，以描写战争为主，反映了东汉末年的群雄割据混战和汉、魏、吴三国之间的政治和军事斗争和最终司马炎一统三国，建立晋朝的故事。反映了三国时代各类社会斗争与矛盾的转化，并概括了这一时代的历史巨变，塑造了一批叱咤风云的三国英雄人物。全书可大致分为黄巾之乱、董卓之乱、群雄逐鹿、三国鼎立、三国归晋五大部分。在广阔的背景上，上演了一幕幕气势磅礴的战争场面。编者罗贯中将兵法三十六计融于字里行间，既有情节，也有兵法韬略。</p>
+                    </div>
+                  </div>
+                </div>
+                <h5 class="mt-3">用法</h5>
+                <h6>通过数据属性</h6>
+                <p>要轻松添加滚动行为到您的顶栏导航，添加 <code>data-spy="scroll"</code> 到您要窥探的元素（通常是 <code>&lt;body&gt; </code>）。然后添加 <code>data-target</code> 属性到任何Bootstrap <code>.nav</code> 组件的父元素ID或类的Class属性。</p>
+                <pre>body {
+  position: relative;
+}</pre>
+                <pre>&lt;body data-spy="scroll" data-target="#navbar-example"&gt;
+  ...
+  &lt;div id="navbar-example"&gt;
+    &lt;ul class="nav nav-tabs" role="tablist"&gt;
+      ...
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  ...
+&lt;/body&gt;</pre>
+                <h6>通过JS</h6>
+                <p>在你的CSS加上 <code>position: relative;</code> ，通过JavaScript调用滚动监控:</p>
+                <pre>$('body').scrollspy({ target: '#navbar-example' })</pre>
+                
+              </div>
+            </div>
+          </div>
+              
+        </div>
+        
+      </div>
+    
+    </main>
+    <!--End 页面主要内容-->
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/perfect-scrollbar.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="js/main.min.js"></script>
+</body>
+</html>
