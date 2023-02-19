@@ -13,7 +13,7 @@
 
     <properties>
         <simbot.version>3.0.0-RC.3</simbot.version>
-        <simbot-component-mirai.version>3.0.0.0-M5</simbot-component-mirai.version>
+        <simbot.mirai.version>3.0.0.0-M5</simbot.mirai.version>
     </properties>
 
     <dependencies>
@@ -26,13 +26,14 @@
         <dependency>
             <groupId>love.forte.simbot.boot</groupId>
             <artifactId>simboot-core-spring-boot-starter</artifactId>
-            <version>${simbot.version}</version>
+            <!--<version>${simbot.version}</version>-->
         </dependency>
+
         <!--mirai组件-->
         <dependency>
             <groupId>love.forte.simbot.component</groupId>
             <artifactId>simbot-component-mirai-core</artifactId>
-            <version>${simbot-component-mirai.version}</version>
+            <!--<version>${simbot.mirai.version}</version>-->
         </dependency>
     </dependencies>
 
