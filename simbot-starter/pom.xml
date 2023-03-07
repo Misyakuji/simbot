@@ -12,7 +12,6 @@
     <artifactId>simbot-starter</artifactId>
     <version>1.0</version>
 
-
     <dependencies>
 
         <dependency>
@@ -38,6 +37,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring.boot.version}</version>
                 <configuration>
                     <!-- main方法所在类。 -->
                     <mainClass>com.miko.StartApplication</mainClass>

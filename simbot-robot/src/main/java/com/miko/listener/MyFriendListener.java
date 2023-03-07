@@ -27,7 +27,7 @@ public class MyFriendListener {
      * @param event 监听的事件对象
      */
     @Listener
-    public EventResult friendListen(FriendMessageEvent event) {
+    public void friendListen(FriendMessageEvent event) {
         //从事件中获取好友对象
         final Friend currentFriend = event.getFriend();
 
@@ -50,6 +50,6 @@ public class MyFriendListener {
 
 
         // 返回 EventResult.truncate 代表阻止后续其他监听函数的执行。
-        return EventResult.truncate();
+        //  return EventResult.truncate();
     }
 }
