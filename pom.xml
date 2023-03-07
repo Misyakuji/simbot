@@ -9,10 +9,12 @@
 <!--        <version>3.0.2</version>-->
 <!--        <relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
 <!--    </parent>-->
+
     <groupId>com.miko</groupId>
     <artifactId>simbot</artifactId>
     <version>1.0</version>
     <packaging>pom</packaging>
+
     <modules>
         <module>simbot-starter</module>
         <module>simbot-robot</module>
