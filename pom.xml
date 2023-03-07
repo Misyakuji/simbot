@@ -30,11 +30,9 @@
         <jsoup.version>1.15.3</jsoup.version>
         <fastjson.version>2.0.24</fastjson.version>
         <snakeyaml.version>1.33</snakeyaml.version>
-        <mirai.core.version>2.14.0</mirai.core.version>
-        <simbot-core.version>3.0.0-RC.3</simbot-core.version>
+        <mirai.version>2.14.0</mirai.version>
         <simbot.version>3.0.0-RC.3</simbot.version>
-        <mirai.version>3.0.0.0-beta-M3</mirai.version>
-        <simbot.mirai.version>3.0.0.0-M5</simbot.mirai.version>
+        <simbot.mirai.version>3.0.0.0-RC</simbot.mirai.version>
 
         <java.version>17</java.version>
         <maven.compiler.source>17</maven.compiler.source>
@@ -189,13 +187,13 @@
             <dependency>
                 <groupId>love.forte.simbot</groupId>
                 <artifactId>simbot-core</artifactId>
-                <version>${simbot-core.version}</version>
+                <version>${simbot.version}</version>
             </dependency>
             <!-- mirai组件 -->
             <dependency>
                 <groupId>love.forte.simbot.component</groupId>
                 <artifactId>simbot-component-mirai-boot</artifactId>
-                <version>${mirai.version}</version>
+                <version>${simbot.mirai.version}</version>
             </dependency>
 
             <!--mirai-core -->
@@ -208,7 +206,7 @@
             <dependency>
                 <groupId>net.mamoe</groupId>
                 <artifactId>mirai-core-jvm</artifactId>
-                <version>${mirai.core.version}</version>
+                <version>${mirai.version}</version>
             </dependency>
 
         </dependencies>
