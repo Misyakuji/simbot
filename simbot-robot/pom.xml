@@ -10,17 +10,15 @@
     </parent>
 
     <artifactId>simbot-robot</artifactId>
-
+    <version>1.0</version>
     <properties>
         <simbot.version>3.0.0-RC.3</simbot.version>
-        <simbot.mirai.version>3.0.0.0-M5</simbot.mirai.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
-            <version>3.0.2</version>
         </dependency>
         <!--simbot-->
         <dependency>
@@ -33,7 +31,6 @@
         <dependency>
             <groupId>love.forte.simbot.component</groupId>
             <artifactId>simbot-component-mirai-core</artifactId>
-            <!--<version>${simbot.mirai.version}</version>-->
         </dependency>
     </dependencies>
 

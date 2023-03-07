@@ -8,29 +8,33 @@
         <artifactId>simbot</artifactId>
         <version>1.0</version>
     </parent>
+
     <artifactId>simbot-web</artifactId>
+    <version>1.0</version>
 
     <dependencies>
         <dependency>
             <groupId>com.miko</groupId>
             <artifactId>simbot-common</artifactId>
-            <version>1.0</version>
         </dependency>
+
+        <!-- spring-boot-starter -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
-            <version>3.0.2</version>
         </dependency>
+
         <!-- spring-web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-    </dependencies>
 
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+        <!-- mariadb driver -->
+        <dependency>
+            <groupId>org.mariadb.jdbc</groupId>
+            <artifactId>mariadb-java-client</artifactId>
+        </dependency>
+
+    </dependencies>
 </project>

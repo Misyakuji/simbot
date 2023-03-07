@@ -10,9 +10,12 @@
     </parent>
 
     <artifactId>simbot-common</artifactId>
-
+    <version>1.0</version>
     <dependencies>
-
+        <dependency>
+            <groupId>com.alibaba.fastjson2</groupId>
+            <artifactId>fastjson2</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

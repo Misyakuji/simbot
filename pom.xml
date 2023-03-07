@@ -3,12 +3,12 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.0.2</version>
-        <relativePath/> <!-- lookup parent from repository -->
-    </parent>
+    <!--    <parent>-->
+    <!--        <groupId>org.springframework.boot</groupId>-->
+    <!--        <artifactId>spring-boot-starter-parent</artifactId>-->
+    <!--        <version>3.0.2</version>-->
+    <!--        <relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
+    <!--    </parent>-->
     <groupId>com.miko</groupId>
     <artifactId>simbot</artifactId>
     <version>1.0</version>
@@ -21,46 +21,96 @@
     </modules>
 
     <properties>
+        <miko.version>1.0</miko.version>
         <mybatis.version>3.0.3</mybatis.version>
         <sqlite.version>3.40.1.0</sqlite.version>
         <druid.version>1.2.15</druid.version>
         <jsoup.version>1.15.3</jsoup.version>
-        <fastjson.version>2.0.9</fastjson.version>
+        <fastjson.version>2.0.24</fastjson.version>
         <snakeyaml.version>1.33</snakeyaml.version>
         <mirai.core.version>2.14.0</mirai.core.version>
+        <simbot-core.version>3.0.0-RC.3</simbot-core.version>
         <simbot.version>3.0.0-RC.3</simbot.version>
         <mirai.version>3.0.0.0-beta-M3</mirai.version>
         <simbot.mirai.version>3.0.0.0-M5</simbot.mirai.version>
-        <spring-boot-starter.version>${parent.version}</spring-boot-starter.version>
+        <springboot.version>3.0.2</springboot.version>
         <java.version>17</java.version>
-    </properties>
 
+        <!-- 参照spring-boot-starter-parent的依赖版本-->
+        <mysql.version>8.0.32</mysql.version>
+        <mariadb.version>3.0.10</mariadb.version>
+        <sqlite-jdbc.version>3.39.4.1</sqlite-jdbc.version>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <version>${springboot.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
 
     <dependencyManagement>
         <dependencies>
+
+            <!-- project model -->
+            <dependency>
+                <groupId>com.miko</groupId>
+                <artifactId>simbot-robot</artifactId>
+                <version>${miko.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.miko</groupId>
+                <artifactId>simbot-common</artifactId>
+                <version>${miko.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.miko</groupId>
+                <artifactId>simbot-web</artifactId>
+                <version>${miko.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.miko</groupId>
+                <artifactId>simbot-stater</artifactId>
+                <version>${miko.version}</version>
+            </dependency>
+
+            <!-- spring-boot-starter -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter</artifactId>
+                <version>${springboot.version}</version>
+            </dependency>
+
+            <!-- spring-web -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${springboot.version}</version>
+            </dependency>
+
             <!-- MySQL driver -->
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
             </dependency>
 
-            <!-- mariadb driver -->
+            <!-- Mariadb driver -->
             <dependency>
                 <groupId>org.mariadb.jdbc</groupId>
                 <artifactId>mariadb-java-client</artifactId>
+                <version>${mariadb.version}</version>
             </dependency>
 
             <!-- Redis -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>${spring-boot-starter.version}</version>
             </dependency>
 
             <!-- Mybatis -->
@@ -84,10 +134,10 @@
                 <version>${snakeyaml.version}</version>
             </dependency>
 
-            <!--FastJson-->
+            <!--FastJson2-->
             <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>fastjson</artifactId>
+                <groupId>com.alibaba.fastjson2</groupId>
+                <artifactId>fastjson2</artifactId>
                 <version>${fastjson.version}</version>
             </dependency>
 
@@ -108,7 +158,12 @@
                 <artifactId>simboot-core-spring-boot-starter</artifactId>
                 <version>${simbot.version}</version>
             </dependency>
-
+            <!-- simbot core -->
+            <dependency>
+                <groupId>love.forte.simbot</groupId>
+                <artifactId>simbot-core</artifactId>
+                <version>${simbot-core.version}</version>
+            </dependency>
             <!-- mirai组件 -->
             <dependency>
                 <groupId>love.forte.simbot.component</groupId>
@@ -129,10 +184,6 @@
                 <version>${mirai.core.version}</version>
             </dependency>
 
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter</artifactId>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 
