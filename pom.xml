@@ -177,32 +177,28 @@
                 <artifactId>sqlite-jdbc</artifactId>
                 <version>${sqlite.version}</version>
             </dependency>
+
             <!-- simbot -->
             <dependency>
                 <groupId>love.forte.simbot.boot</groupId>
                 <artifactId>simboot-core-spring-boot-starter</artifactId>
                 <version>${simbot.version}</version>
             </dependency>
+
             <!-- simbot core -->
             <dependency>
                 <groupId>love.forte.simbot</groupId>
                 <artifactId>simbot-core</artifactId>
                 <version>${simbot.version}</version>
             </dependency>
-            <!-- mirai组件 -->
-            <dependency>
-                <groupId>love.forte.simbot.component</groupId>
-                <artifactId>simbot-component-mirai-boot</artifactId>
-                <version>${simbot.mirai.version}</version>
-            </dependency>
 
-            <!--mirai-core -->
+            <!-- simbot-mirai-core -->
             <dependency>
                 <groupId>love.forte.simbot.component</groupId>
                 <artifactId>simbot-component-mirai-core</artifactId>
                 <version>${simbot.mirai.version}</version>
             </dependency>
-
+            <!-- mirai-core -->
             <dependency>
                 <groupId>net.mamoe</groupId>
                 <artifactId>mirai-core-jvm</artifactId>
