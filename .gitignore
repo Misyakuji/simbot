@@ -39,3 +39,5 @@ build/
 cache/
 device.json
 *.log
+*.bot
+*.bot.json
