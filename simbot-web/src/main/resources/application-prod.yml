@@ -8,9 +8,8 @@ spring:
   datasource:
     username: root
     password: awsl
-    url: jdbc:mariadb://127.0.0.1:3306/simbot?characterEncoding=utf-8&useSSL=false&useTimezone=true&serverTimezone=GMT%2B8
-    #url: jdbc:mysql://127.0.0.1:3306/simbot?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
-    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/simbot?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource            # 数据库连接池类别
     druid:
       initial-size: 5                                       # 初始化大小
