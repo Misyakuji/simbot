@@ -13,7 +13,7 @@
     <artifactId>simbot-robot</artifactId>
 
     <properties>
-        <simbot.version>3.0.0-RC.3</simbot.version>
+        <simbot.version>3.1.0</simbot.version>
     </properties>
 
     <dependencies>
