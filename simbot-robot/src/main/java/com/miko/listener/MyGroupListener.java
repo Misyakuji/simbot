@@ -3,6 +3,7 @@ package com.miko.listener;
 import love.forte.di.annotation.Beans;
 import love.forte.simboot.annotation.Filter;
 import love.forte.simboot.annotation.Listener;
+import love.forte.simboot.filter.MatchType;
 import love.forte.simbot.event.GroupMessageEvent;
 import love.forte.simbot.message.Messages;
 import org.slf4j.Logger;
@@ -34,37 +35,43 @@ public class MyGroupListener {
      * @param event 事件本体
      */
     @Listener
-    @Filter(targets = @Filter.Targets(atBot = true))
-    public void baseGroupListenByAT(GroupMessageEvent event) {
+    @Filter(value = ".", matchType = MatchType.TEXT_STARTS_WITH)
+    public void baseGroupListen(GroupMessageEvent event) {
         // 获取事件发生的群组和用户
         final String groupName = event.getGroup().getName();
         final String authorName = event.getAuthor().getUsername();
+
         //获取信息本体
         final Messages messages = event.getMessageContent().getMessages();
 
-
-        //获取信息内容
-        final String plainText = event.getMessageContent().getPlainText().trim();
-
-
-            event.getGroup().sendBlocking(plainText);
-
         // 在控制台打印消息内容(这里直接展示mirai的原生消息对象)。
         LOGGER.info("「{}」在「{}」里发送了消息：{}", authorName, groupName, messages);
+
     }
 
     /**
      * 处理以.开头的群消息
      */
-    private void groupListenByStartDot(){
+    @Listener
 
+    private void groupListenByStartDot(GroupMessageEvent event){
+        //获取信息内容
+        final String plainText = event.getMessageContent().getPlainText().trim().replace(".","");
+        LOGGER.info("接受指令:"+plainText);
+        event.getGroup().sendBlocking(event.toString());
     }
+
     /**
      * 处理bot被AT的群消息
      */
-    private void groupListenByAt(){
+    @Listener
+    @Filter(targets = @Filter.Targets(atBot = true))
+    private void groupListenByAt(GroupMessageEvent event){
 
+        //获取信息内容
+        final String plainText = event.getMessageContent().getPlainText().trim();
+
+        event.getGroup().sendBlocking(plainText);
     }
-
 
 }

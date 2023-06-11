@@ -1,8 +1,10 @@
 package com.miko.listener;
 
+import jakarta.annotation.Resource;
 import love.forte.simboot.annotation.Listener;
 import love.forte.simbot.ID;
 import love.forte.simbot.Identifies;
+import love.forte.simbot.bot.Bot;
 import love.forte.simbot.event.internal.BotStartedEvent;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
