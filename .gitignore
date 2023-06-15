@@ -44,3 +44,4 @@ device.json
 *.log
 *.bot
 *.bot.json
+info.log.**.gz

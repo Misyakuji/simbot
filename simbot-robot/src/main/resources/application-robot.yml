@@ -19,6 +19,9 @@ simbot:
   # top-level-listener-scan-package:
   #   - 'example.listener.foo'
   #   - 'example.listener.bar'
-
-  master-qq: 67252271
-  groups: 710117186,1043409458,559381755
+#  default-master-qq: 主人号码
+#  default-notice-groups: bot生效群组
+#  default-login-msg: bot上线消息内容
+  default-master-qq: 67252271
+  default-notice-groups: 710117186
+  default-login-msg: '您的小可爱已上线~'
