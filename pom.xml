@@ -24,6 +24,7 @@
 
     <properties>
         <miko.version>1.0</miko.version>
+        <lombok.version>1.18.26</lombok.version>
         <mybatis.version>3.0.2</mybatis.version>
         <sqlite.version>3.42.0.0</sqlite.version>
         <druid.version>1.2.18</druid.version>
@@ -116,6 +117,12 @@
                 <artifactId>spring-boot-starter-test</artifactId>
                 <version>${spring.boot.version}</version>
                 <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
             </dependency>
 
             <!-- MySQL driver -->
