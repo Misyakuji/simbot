@@ -1,20 +1,22 @@
 package com.miko.listener;
 
+import com.alibaba.fastjson2.JSONObject;
+import com.miko.util.ApiUtil;
+import lombok.val;
+import love.forte.simboot.annotation.Filter;
 import love.forte.simboot.annotation.Listener;
+import love.forte.simboot.filter.MatchType;
 import love.forte.simbot.action.ReplySupport;
 import love.forte.simbot.definition.Friend;
 import love.forte.simbot.event.EventResult;
 import love.forte.simbot.event.FriendMessageEvent;
-import org.apache.http.client.methods.CloseableHttpResponse;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClients;
-import org.apache.http.util.EntityUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-import java.nio.charset.StandardCharsets;
+import java.io.IOException;
+import java.util.HashMap;
+
 
 /**
  * 好友相关事件监听器。
@@ -29,47 +31,35 @@ public class MyFriendListener {
     private static final Logger LOGGER = LoggerFactory.getLogger(MyFriendListener.class);
 
     /**
-     * 监听好友消息，并且回复这个好友一句"是的"。
+     * 监听好友消息:链接类型，返回链接内容
      *
      * @param event 监听的事件对象
      * @return
      */
-//    @Listener
-    public EventResult friendListen(FriendMessageEvent event) {
-        //从事件中获取好友对象
-        final Friend currentFriend = event.getFriend();
-
-        //输出日志
-        LOGGER.info("friend: {}({}), message: {}",
-                currentFriend.getUsername(),
-                currentFriend.getId(),
-                event.getMessageContent().getPlainText());
-
-        //获取内容
-        final String plainText = event.getMessageContent().getPlainText().trim();
-
-        //先判断 event 事件对象是否允许"回复"，在允许的情况使用"reply(reply)", 不允许则通过获取好友来直接发送消息。
-        if (event instanceof ReplySupport) {
-            //
-            ((ReplySupport) event).replyBlocking(plainText);
-
-        } else {
-
-            currentFriend.sendBlocking(plainText);
+    @Listener
+    @Filter(value = "http", matchType = MatchType.TEXT_STARTS_WITH)
+    public EventResult onMessageCall(FriendMessageEvent event) {
+        String msg = event.getMessageContent().getPlainText();
+        try {
+            val reply = ApiUtil.callGet(msg);
+            event.replyAsync(reply);
+        } catch (IOException e) {
+            event.replyAsync("IOException");
+        } catch (Exception e){
+            event.replyAsync("获取链接失败");
         }
-
-
-        // 返回 EventResult.truncate 代表阻止后续其他监听函数的执行。
-        //  return EventResult.truncate();
-        return EventResult.defaults();
+        //异步回复消息
+        return EventResult.truncate();
     }
-
     /**
      * 监听消息
      */
     @Listener
     public EventResult onMessage(FriendMessageEvent event) {
         String msg = event.getMessageContent().getPlainText();
+        if (msg.contains("http")) {
+            return EventResult.defaults();
+        }
         //把空格自动转换为逗号
         msg = msg.trim().replaceAll(" ", ",");
         LOGGER.info(event.getFriend().getId() + "提问：" + msg);
@@ -84,16 +74,13 @@ public class MyFriendListener {
     }
 
     public static String AiOne(String sendMsg) {
+        String baseUrl = "http://api.qingyunke.com/api.php?key=free&appid=0&msg=";
         try {
-            HttpGet httpGet = new HttpGet("http://api.qingyunke.com/api.php?key=free&appid=0&msg=" + sendMsg);
-            String user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.42";
-            httpGet.addHeader("user-agent", user_agent);
-            CloseableHttpClient httpClient = HttpClients.createDefault();
-            CloseableHttpResponse response = httpClient.execute(httpGet);
-            String body = EntityUtils.toString(response.getEntity(), StandardCharsets.UTF_8);
-            body = body.substring(body.indexOf("content") + 10, body.length() - 2);
-            LOGGER.info("AiOne={}", body);
-            return body;
+            String url = baseUrl + sendMsg;
+            val result = ApiUtil.callGet(url);
+            LOGGER.info("AiOne={}", result);
+            val resultMap = JSONObject.parseObject(result.toString(), HashMap.class);
+            return resultMap.get("content").toString();
         } catch (Exception e) {
             LOGGER.error(e.toString());
             return null;

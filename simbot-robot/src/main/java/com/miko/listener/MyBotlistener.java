@@ -48,7 +48,6 @@ public class MyBotlistener {
         // 向master和群组发送上线通知
         bot.getFriend(ID.$(masterId)).sendAsync(loginMsg);
         groups.forEach(id -> bot.getGroup(Identifies.ID(id)).sendAsync(loginMsg));
-
         LOGGER.info("[bot<{}>上线],{}", bot.getId(), event.toString());
         return EventResult.defaults();
     }
