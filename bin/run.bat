@@ -1,6 +1,6 @@
 @echo off
 echo.
-echo [信息] 使用Jar命令运行Web工程。
+echo [Info] Run the Web project using the Jar command.
 echo.
 
 cd %~dp0
