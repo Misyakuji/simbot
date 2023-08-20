@@ -41,7 +41,6 @@ build/
 ### simbot ###
 cache/
 device.json
-*.log
-*.bot
-*.bot.json
+**/simbot-bots/
+**/*.log
 info.log.**.gz
