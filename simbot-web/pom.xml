@@ -18,12 +18,6 @@
             <artifactId>simbot-common</artifactId>
         </dependency>
 
-        <!-- spring-boot-starter -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-
         <!-- spring-web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -40,11 +34,6 @@
         <dependency>
             <groupId>com.mysql</groupId>
             <artifactId>mysql-connector-j</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.33</version>
         </dependency>
 
         <dependency>
