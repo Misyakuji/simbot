@@ -1,7 +1,7 @@
 {
   "component": "simbot.onebot11",
   "authorization": {
-    "botUniqueId": "759901093",
+    "botUniqueId": "your_qq_number",
     "apiServerHost": "http://localhost:3000",
     "eventServerHost": "ws://localhost:3001"
   }
